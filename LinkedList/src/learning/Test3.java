@@ -24,12 +24,35 @@ public class Test3 {
         System.out.println();
     }
 
+    private static int lengthOfLL(Node head){
+        int count = 0;
+        Node temp = head;
+        while(temp != null){
+            temp = temp.next;
+            count++;
+        }
+        return count;
+    }
+
+    private static int checkIfPresent(Node head, int val) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data == val) {
+                return 1;
+            }
+            temp = temp.next;
+        }
+
+        return 0;
+    }
+
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
         Node head = convertArrToLL(arr);
         System.out.println(head.data);
         System.out.println(head.next.data);
-        System.out.println();
         traversalOfLL(arr);
+        System.out.println(lengthOfLL(head));
+        System.out.println(checkIfPresent(head, 3));
     }
 }
