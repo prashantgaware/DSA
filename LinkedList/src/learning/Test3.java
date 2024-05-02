@@ -1,8 +1,7 @@
 package learning;
 
-// Traversal
-
 public class Test3 {
+    // Conversion of array to LL
     private static Node convertArrToLL(int[] arr){
         Node head = new Node(arr[0]);
         Node mover = head;
@@ -14,6 +13,7 @@ public class Test3 {
         return head;
     }
 
+    // Traversal
     private static void traversalOfLL(int[] arr){
         Node head = convertArrToLL(arr);
         Node temp = head;
@@ -24,6 +24,7 @@ public class Test3 {
         System.out.println();
     }
 
+    // Length of LL
     private static int lengthOfLL(Node head){
         int count = 0;
         Node temp = head;
@@ -34,6 +35,7 @@ public class Test3 {
         return count;
     }
 
+    // Search
     private static int checkIfPresent(Node head, int val) {
         Node temp = head;
         while (temp != null) {
