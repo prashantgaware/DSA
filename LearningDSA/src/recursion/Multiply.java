@@ -19,7 +19,7 @@ public class Multiply {
     }
 
     static int mul(int m, int n) {
-        if (n == 0)
+        if (m == 0 || n == 0)
             return 0;
         else
             return m + mul(m, n-1);
