@@ -16,10 +16,10 @@ public class LargestElement {
         }
 
         System.out.println(getLargestNaive(arr));
-        System.out.println(getLargestEff(arr));
+        System.out.println(getLargestEfficient(arr));
     }
 
-    private static int getLargestEff(int[] arr) {
+    private static int getLargestEfficient(int[] arr) {
         int res = 0;
         for(int i=0; i<arr.length; i++) {
             if (arr[i] > arr[res])
