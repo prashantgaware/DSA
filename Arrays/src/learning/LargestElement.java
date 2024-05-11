@@ -41,7 +41,7 @@ public class LargestElement {
                 }
             }
 
-            if (flag == true)
+            if (flag)
                 return i;
         }
         return -1;
