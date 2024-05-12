@@ -1,2 +1,2 @@
 # DSA
-my personal practice
+practice
