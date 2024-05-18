@@ -17,6 +17,7 @@ public class LargestElement {
 
         System.out.println(getLargestNaive(arr));
         System.out.println(getLargestEfficient(arr));
+        System.out.println(getLargestEff(arr));
     }
 
     private static int getLargestEfficient(int[] arr) {
@@ -27,6 +28,16 @@ public class LargestElement {
         }
 
         return res;
+    }
+
+    private static int getLargestEff(int[] arr) {
+        int max = arr[0];
+        for(int i=0; i<arr.length; i++) {
+            if (arr[i] < max)
+                max = arr[i];
+        }
+
+        return max;
     }
 
     private static int getLargestNaive(int[] arr) {
