@@ -1,4 +1,4 @@
-package learning.linear;
+package searching.learning.linear;
 
 import java.util.Scanner;
 
