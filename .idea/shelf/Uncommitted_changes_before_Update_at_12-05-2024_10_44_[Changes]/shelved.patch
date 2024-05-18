@@ -1,0 +1,40 @@
+Index: Searching/Searching.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Searching/Searching.iml b/Searching/Searching.iml
+new file mode 100644
+--- /dev/null	(date 1715488893823)
++++ b/Searching/Searching.iml	(date 1715488893823)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/Arrays/Arrays.iml\" filepath=\"$PROJECT_DIR$/Arrays/Arrays.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/DSA.iml\" filepath=\"$PROJECT_DIR$/.idea/DSA.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/LearningDSA/LearningDSA.iml\" filepath=\"$PROJECT_DIR$/LearningDSA/LearningDSA.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/LinkedList/LinkedList.iml\" filepath=\"$PROJECT_DIR$/LinkedList/LinkedList.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/Strings/Strings.iml\" filepath=\"$PROJECT_DIR$/Strings/Strings.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision b2c7763ce9a8c7ffb7631ed4dcef402556295e1f)
++++ b/.idea/modules.xml	(date 1715488893839)
+@@ -6,6 +6,7 @@
+       <module fileurl="file://$PROJECT_DIR$/.idea/DSA.iml" filepath="$PROJECT_DIR$/.idea/DSA.iml" />
+       <module fileurl="file://$PROJECT_DIR$/LearningDSA/LearningDSA.iml" filepath="$PROJECT_DIR$/LearningDSA/LearningDSA.iml" />
+       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Searching/Searching.iml" filepath="$PROJECT_DIR$/Searching/Searching.iml" />
+       <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
+     </modules>
+   </component>
