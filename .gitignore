@@ -1,6 +1,10 @@
+# Ignore the out directory
 /out
-/.idea
-.iml
-.xml
-Searching.iml
-modules.xml
+
+# Ignore all .idea directory and its contents
+/.idea/
+/.idea/*
+
+# Ignore specific files
+*.iml
+*.xml
