@@ -21,13 +21,13 @@ public class SecondSmallest {
     private static int getSecondLargest(int[] arr) {
         int smallest = arr[0];
         int sSmallest = Integer.MAX_VALUE;
-        
-        for (int i=0; i<arr.length; i++) {
-            if (arr[i] < smallest) {
+
+        for (int j : arr) {
+            if (j < smallest) {
                 sSmallest = smallest;
-                smallest = arr[i];
-            } else if (arr[i] != smallest && arr[i] < sSmallest) {
-                sSmallest = arr[i];
+                smallest = j;
+            } else if (j != smallest && j < sSmallest) {
+                sSmallest = j;
             }
         }
 

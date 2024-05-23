@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="LeftShift">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString">
+      <change afterPath="$PROJECT_DIR$/LinkedList/src/learning/LinkedListTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12-05-2024_10_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12-05-2024_10_44__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arrays/src/learning/SecondSmallest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/src/learning/SecondSmallest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Searching/Searching.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Searching &amp; Sorting/Searching &amp; Sorting.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +29,7 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;prashantgaware&quot;
-  }
+  &quot;lastFilter&quot;: {}
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
@@ -46,42 +48,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.BinarySearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BinarySearchRecursive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CheckSorted.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DeleteNode.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Factorial.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LargestElement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LeftShift.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LeftShiftByOne.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinearSearch01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Multiply.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PowerOfN.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RemoveDuplicates.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecondLargest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecondSmallest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UniqueCharacters.executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Notifications&quot;: &quot;VCS notifications&quot;,
-    &quot;Notification.DoNotAsk-Vcs Notifications&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Practice/DSA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.BinarySearch.executor": "Run",
+    "Application.BinarySearchRecursive.executor": "Run",
+    "Application.BubbleSort.executor": "Run",
+    "Application.CheckSorted.executor": "Run",
+    "Application.DeleteNode.executor": "Run",
+    "Application.Factorial.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
+    "Application.LargestElement.executor": "Run",
+    "Application.LeftShift.executor": "Run",
+    "Application.LeftShiftByOne.executor": "Run",
+    "Application.LinearSearch01.executor": "Run",
+    "Application.Multiply.executor": "Run",
+    "Application.PowerOfN.executor": "Run",
+    "Application.RemoveDuplicates.executor": "Run",
+    "Application.ReverseString.executor": "Run",
+    "Application.SecondLargest.executor": "Run",
+    "Application.SecondSmallest.executor": "Debug",
+    "Application.Test01.executor": "Run",
+    "Application.Test1.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test3.executor": "Run",
+    "Application.TwoSum.executor": "Run",
+    "Application.UniqueCharacters.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
+    "Notification.DoNotAsk-Vcs Notifications": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Practice/DSA",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Practice\DSA\Arrays\src\leetcode" />
@@ -89,21 +95,6 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="learning" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="LinkedList" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="LinkedList" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -322,7 +313,39 @@
       <option name="project" value="LOCAL" />
       <updated>1716024519723</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Bubble Sort">
+      <option name="closed" value="true" />
+      <created>1716042533937</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716042533937</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Leetcode:&#10;1. Two Sum">
+      <option name="closed" value="true" />
+      <created>1716051491844</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716051491844</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update .gitignore">
+      <option name="closed" value="true" />
+      <created>1716051624639</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716051624639</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString">
+      <option name="closed" value="true" />
+      <created>1716132493902</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716132493902</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,6 +392,10 @@
     <MESSAGE value="LargestElement &amp; SecondLargest" />
     <MESSAGE value="SecondSmallest&#10;&#10;Leetcode:&#10;1752. Check if Array Is Sorted and Rotated.&#10;26. Remove Duplicates from Sorted Array" />
     <MESSAGE value="LeftShift" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeftShift" />
+    <MESSAGE value="Bubble Sort" />
+    <MESSAGE value="Leetcode:&#10;1. Two Sum" />
+    <MESSAGE value="Update .gitignore" />
+    <MESSAGE value="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString" />
   </component>
 </project>
