@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString">
-      <change afterPath="$PROJECT_DIR$/Recursion/src/learning/TowersOfHanoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Recursion: Tower of Hanoi">
+      <change afterPath="$PROJECT_DIR$/Arrays/src/learning/SumOfArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack/src/learning/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/src/learning/Test01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,46 +45,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.BinarySearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BinarySearchRecursive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BubbleSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CheckSorted.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DeleteNode.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Factorial.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LargestElement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LeftShift.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LeftShiftByOne.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinearSearch01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Multiply.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PowerOfN.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RemoveDuplicates.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ReverseString.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecondLargest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecondSmallest.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Test01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TwoSum.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UniqueCharacters.executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Notifications&quot;: &quot;VCS notifications&quot;,
-    &quot;Notification.DoNotAsk-Vcs Notifications&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Practice/DSA&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.BinarySearch.executor": "Run",
+    "Application.BinarySearchRecursive.executor": "Run",
+    "Application.BubbleSort.executor": "Run",
+    "Application.CheckSorted.executor": "Run",
+    "Application.DeleteNode.executor": "Run",
+    "Application.Factorial.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
+    "Application.IsSortedAndRotated.executor": "Run",
+    "Application.LargestElement.executor": "Run",
+    "Application.LeftShift.executor": "Run",
+    "Application.LeftShiftByOne.executor": "Run",
+    "Application.LinearSearch01.executor": "Run",
+    "Application.Multiply.executor": "Run",
+    "Application.PowerOfN.executor": "Run",
+    "Application.RemoveDuplicates.executor": "Run",
+    "Application.ReverseString.executor": "Run",
+    "Application.SecondLargest.executor": "Run",
+    "Application.SecondSmallest.executor": "Debug",
+    "Application.SumOfArray.executor": "Run",
+    "Application.Test01.executor": "Run",
+    "Application.Test1.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test3.executor": "Run",
+    "Application.TowersOfHanoi.executor": "Run",
+    "Application.TwoSum.executor": "Run",
+    "Application.UniqueCharacters.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
+    "Notification.DoNotAsk-Vcs Notifications": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Practice/DSA",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Practice\DSA\Arrays\src\leetcode" />
@@ -342,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716132493902</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Recursion: Tower of Hanoi">
+      <option name="closed" value="true" />
+      <created>1716646432385</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716646432385</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +376,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -393,6 +416,7 @@
     <MESSAGE value="Leetcode:&#10;1. Two Sum" />
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString" />
+    <MESSAGE value="Recursion: Tower of Hanoi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recursion: Tower of Hanoi" />
   </component>
 </project>
