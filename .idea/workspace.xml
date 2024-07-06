@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Recursion: Tower of Hanoi">
-      <change afterPath="$PROJECT_DIR$/Arrays/src/learning/SumOfArray.java" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Recursion: Sum of Array">
+      <change afterPath="$PROJECT_DIR$/Recursion/src/learning/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recursion/src/learning/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recursion/src/learning/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/selection/Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack/src/learning/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/src/learning/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/bubble/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/bubble/BubbleSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +71,8 @@
     "Application.SecondSmallest.executor": "Debug",
     "Application.SumOfArray.executor": "Run",
     "Application.Test01.executor": "Run",
+    "Application.Test02.executor": "Debug",
+    "Application.Test03.executor": "Run",
     "Application.Test1.executor": "Run",
     "Application.Test2.executor": "Run",
     "Application.Test3.executor": "Run",
@@ -353,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716646432385</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Recursion: Sum of Array">
+      <option name="closed" value="true" />
+      <created>1720203717040</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1720203717040</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,6 +430,23 @@
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString" />
     <MESSAGE value="Recursion: Tower of Hanoi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recursion: Tower of Hanoi" />
+    <MESSAGE value="Recursion: Sum of Array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recursion: Sum of Array" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Recursion/src/learning/Test01.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Recursion/src/learning/Test02.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
