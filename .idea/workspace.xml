@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Recursion: Sum of Array">
-      <change afterPath="$PROJECT_DIR$/Recursion/src/learning/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/src/learning/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/src/learning/Test03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/selection/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/bubble/Problem01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/insertion/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/selection/Problem01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/bubble/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/bubble/BubbleSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,7 @@
     "Application.LinearSearch01.executor": "Run",
     "Application.Multiply.executor": "Run",
     "Application.PowerOfN.executor": "Run",
+    "Application.Problem01.executor": "Run",
     "Application.RemoveDuplicates.executor": "Run",
     "Application.ReverseString.executor": "Run",
     "Application.SecondLargest.executor": "Run",
