@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Sorting problems:&#10;&#10;1. Moving all 0's to end &#10;2. Sort an array in lexicographical order using Selection Sort">
-      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/merge/MergeTwoSortedArrays.java" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Merge Two Sorted Arrays">
+      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/merge/MergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/merge/MergeTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/merge/MergeTwoSortedArrays.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,7 @@
     "Application.LeftShift.executor": "Run",
     "Application.LeftShiftByOne.executor": "Run",
     "Application.LinearSearch01.executor": "Run",
+    "Application.MergeSort.executor": "Run",
     "Application.MergeTwoSortedArrays.executor": "Run",
     "Application.Multiply.executor": "Run",
     "Application.PowerOfN.executor": "Run",
@@ -372,7 +374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720345765303</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Merge Two Sorted Arrays">
+      <option name="closed" value="true" />
+      <created>1720354056494</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1720354056494</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +448,8 @@
     <MESSAGE value="Recursion: Tower of Hanoi" />
     <MESSAGE value="Recursion: Sum of Array" />
     <MESSAGE value="Sorting problems:&#10;&#10;1. Moving all 0's to end &#10;2. Sort an array in lexicographical order using Selection Sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorting problems:&#10;&#10;1. Moving all 0's to end &#10;2. Sort an array in lexicographical order using Selection Sort" />
+    <MESSAGE value="Merge Two Sorted Arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge Two Sorted Arrays" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
