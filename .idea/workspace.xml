@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Recursion: Sum of Array">
-      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/bubble/Problem01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/insertion/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/selection/Problem01.java" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Sorting problems:&#10;&#10;1. Moving all 0's to end &#10;2. Sort an array in lexicographical order using Selection Sort">
+      <change afterPath="$PROJECT_DIR$/Searching &amp; Sorting/src/sorting/merge/MergeTwoSortedArrays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +59,7 @@
     "Application.LeftShift.executor": "Run",
     "Application.LeftShiftByOne.executor": "Run",
     "Application.LinearSearch01.executor": "Run",
+    "Application.MergeTwoSortedArrays.executor": "Run",
     "Application.Multiply.executor": "Run",
     "Application.PowerOfN.executor": "Run",
     "Application.Problem01.executor": "Run",
@@ -365,7 +364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720203717040</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Sorting problems:&#10;&#10;1. Moving all 0's to end &#10;2. Sort an array in lexicographical order using Selection Sort">
+      <option name="closed" value="true" />
+      <created>1720345765303</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1720345765303</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +437,8 @@
     <MESSAGE value="Leetcode:&#10;1295. Find Numbers with Even Number of Digits&#10;Max Consecutive Ones&#10;ReverseString" />
     <MESSAGE value="Recursion: Tower of Hanoi" />
     <MESSAGE value="Recursion: Sum of Array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recursion: Sum of Array" />
+    <MESSAGE value="Sorting problems:&#10;&#10;1. Moving all 0's to end &#10;2. Sort an array in lexicographical order using Selection Sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting problems:&#10;&#10;1. Moving all 0's to end &#10;2. Sort an array in lexicographical order using Selection Sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
