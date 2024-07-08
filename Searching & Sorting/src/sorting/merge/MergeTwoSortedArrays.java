@@ -10,7 +10,7 @@ public class MergeTwoSortedArrays {
         System.out.println();
         mergeTwoSortedArraysEfficient(arr1, arr2, arr1.length, arr2.length);
 
-    System.out.println();
+        System.out.println();
         // Merge function for MergeSort
         int[] arr3 = {40,60,70,10,30};
         int left = 0, right = arr3.length - 1;

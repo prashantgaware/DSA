@@ -8,6 +8,11 @@ public class Test01 {
         for(int val : array) {
             System.out.print(val + " ");
         }
+        System.out.println();
+        insertionSortEfficient(array);
+        for(int val : array) {
+            System.out.print(val + " ");
+        }
     }
 
     private static void insertionSort(int[] array) {
@@ -23,6 +28,19 @@ public class Test01 {
 
                 j--;
             }
+        }
+    }
+
+    private static void insertionSortEfficient(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int key = array[i];
+            int j = i-1;
+
+            while (j>=0 && array[j] > key) {
+                array[j+1] = array[j];
+                j--;
+            }
+            array[j+1] = key;
         }
     }
 }
