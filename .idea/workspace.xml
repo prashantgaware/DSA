@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Leetcode:&#10;167. Two Sum II - Input Array Is Sorted">
-      <change afterPath="$PROJECT_DIR$/Arrays/src/leetcode/RemoveDuplicatesFromSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/src/leetcode/IsSortedAndRotated.java" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/src/leetcode/IsSortedAndRotated.java" afterDir="false" />
-    </list>
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Leetcode:&#10;80. Remove Duplicates from Sorted Array II" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -402,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720804064352</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Leetcode:&#10;80. Remove Duplicates from Sorted Array II">
+      <option name="closed" value="true" />
+      <created>1720852640250</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1720852640250</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LinkedList learning" />
     <MESSAGE value="LinkedList learning : traversal" />
     <MESSAGE value="LinkedList learning : search" />
     <MESSAGE value="LinkedList learning : revision" />
@@ -470,7 +473,8 @@
     <MESSAGE value="Merge Two Sorted Arrays" />
     <MESSAGE value="Merge Sort" />
     <MESSAGE value="Leetcode:&#10;167. Two Sum II - Input Array Is Sorted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode:&#10;167. Two Sum II - Input Array Is Sorted" />
+    <MESSAGE value="Leetcode:&#10;80. Remove Duplicates from Sorted Array II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode:&#10;80. Remove Duplicates from Sorted Array II" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
