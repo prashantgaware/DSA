@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Leetcode:&#10;80. Remove Duplicates from Sorted Array II">
-      <change afterPath="$PROJECT_DIR$/Searching/src/searching/problems/FirstOccurrence.java" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Index of FirstOccurrence">
+      <change afterPath="$PROJECT_DIR$/Searching/src/searching/problems/IndexOfLastOccurrence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searching/src/searching/learning/binary/BinarySearchIterative.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching/src/searching/binary/BinarySearchIterative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searching/src/searching/learning/binary/BinarySearchRecursive.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching/src/searching/binary/BinarySearchRecursive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searching/src/searching/learning/linear/LinearSearch01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching/src/searching/linear/LinearSearch01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Searching/learning/binary/BinarySearchIterative.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Searching/learning/binary/BinarySearchRecursive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Searching/learning/linear/LinearSearch01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Searching/src/searching/problems/FirstOccurrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching/src/searching/problems/IndexOfFirstOccurrence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -416,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720852640250</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Index of FirstOccurrence">
+      <option name="closed" value="true" />
+      <created>1720881290280</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1720881290280</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LinkedList learning : traversal" />
     <MESSAGE value="LinkedList learning : search" />
     <MESSAGE value="LinkedList learning : revision" />
     <MESSAGE value="LearningDSA : Recursion" />
@@ -484,7 +486,8 @@
     <MESSAGE value="Merge Sort" />
     <MESSAGE value="Leetcode:&#10;167. Two Sum II - Input Array Is Sorted" />
     <MESSAGE value="Leetcode:&#10;80. Remove Duplicates from Sorted Array II" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode:&#10;80. Remove Duplicates from Sorted Array II" />
+    <MESSAGE value="Index of FirstOccurrence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Index of FirstOccurrence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -500,9 +503,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Searching/src/searching/problems/FirstOccurrence.java</url>
+          <url>file://$PROJECT_DIR$/Searching/src/searching/problems/IndexOfFirstOccurrence.java</url>
           <line>16</line>
-          <properties class="searching.problems.FirstOccurrence" method="firstOccurrenceRecursive">
+          <properties class="searching.problems.IndexOfFirstOccurrence" method="firstOccurrenceRecursive">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
