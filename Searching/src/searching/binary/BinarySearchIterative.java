@@ -1,4 +1,4 @@
-package searching.learning.binary;
+package searching.binary;
 
 import java.util.Scanner;
 
