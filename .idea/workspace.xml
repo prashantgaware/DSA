@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Index of FirstOccurrence">
-      <change afterPath="$PROJECT_DIR$/Searching/src/searching/problems/IndexOfLastOccurrence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorting/src/sorting/merge/leetcode/MergeSortedArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searching/src/searching/problems/FirstOccurrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching/src/searching/problems/IndexOfFirstOccurrence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,7 @@
     "Application.LeftShiftByOne.executor": "Run",
     "Application.LinearSearch01.executor": "Run",
     "Application.MergeSort.executor": "Run",
+    "Application.MergeSortedArray.executor": "Run",
     "Application.MergeTwoSortedArrays.executor": "Run",
     "Application.Multiply.executor": "Run",
     "Application.PowerOfN.executor": "Run",
