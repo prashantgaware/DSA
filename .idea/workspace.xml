@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Index of FirstOccurrence">
-      <change afterPath="$PROJECT_DIR$/Sorting/src/sorting/merge/leetcode/MergeSortedArray.java" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Leetcode: 53. Maximum Subarray&#10;Approach1: Kadane's Algo&#10;Approach2: Divide and Conquer">
+      <change afterPath="$PROJECT_DIR$/Strings/src/leetcode/StringCompression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arrays/leetcode/IsSortedAndRotated.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Arrays/leetcode/IsSortedAndRotated.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,60 +45,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.BinarySearch.executor": "Run",
-    "Application.BinarySearchRecursive.executor": "Run",
-    "Application.BubbleSort.executor": "Run",
-    "Application.CheckSorted.executor": "Run",
-    "Application.DeleteNode.executor": "Run",
-    "Application.Factorial.executor": "Run",
-    "Application.Fibonacci.executor": "Run",
-    "Application.FirstOccurrence.executor": "Debug",
-    "Application.IsSortedAndRotated.executor": "Run",
-    "Application.LargestElement.executor": "Run",
-    "Application.LeftShift.executor": "Run",
-    "Application.LeftShiftByOne.executor": "Run",
-    "Application.LinearSearch01.executor": "Run",
-    "Application.MergeSort.executor": "Run",
-    "Application.MergeSortedArray.executor": "Run",
-    "Application.MergeTwoSortedArrays.executor": "Run",
-    "Application.Multiply.executor": "Run",
-    "Application.PowerOfN.executor": "Run",
-    "Application.Problem01.executor": "Run",
-    "Application.RemoveDuplicates.executor": "Run",
-    "Application.ReverseString.executor": "Run",
-    "Application.SecondLargest.executor": "Run",
-    "Application.SecondSmallest.executor": "Debug",
-    "Application.SumOfArray.executor": "Run",
-    "Application.Test01.executor": "Run",
-    "Application.Test02.executor": "Debug",
-    "Application.Test03.executor": "Run",
-    "Application.Test1.executor": "Run",
-    "Application.Test2.executor": "Run",
-    "Application.Test3.executor": "Run",
-    "Application.TowersOfHanoi.executor": "Run",
-    "Application.TwoSum.executor": "Run",
-    "Application.TwoSum_Brute.executor": "Run",
-    "Application.TwoSum_SortedArray.executor": "Run",
-    "Application.UniqueCharacters.executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "Notification.DoNotAsk-Vcs Notifications": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Practice/DSA",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.BinarySearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BinarySearchRecursive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BubbleSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CheckSorted.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeleteNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Factorial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstOccurrence.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.IsSortedAndRotated.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LargestElement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeftShift.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeftShiftByOne.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinearSearch01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSortedArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeTwoSortedArrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Multiply.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PowerOfN.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Problem01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RemoveDuplicates.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseString.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SecondLargest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SecondSmallest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SumOfArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test02.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Test03.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TowersOfHanoi.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSum_Brute.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSum_SortedArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UniqueCharacters.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Notifications&quot;: &quot;VCS notifications&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;Notification.DoNotAsk-Vcs Notifications&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Practice/DSA&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Practice\DSA\Arrays\src\leetcode" />
@@ -105,6 +106,26 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="learning" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SecondSmallest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learning.SecondSmallest" />
+      <module name="Arrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SecondSmallest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -419,7 +440,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720881290280</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Leetcode: 88. Merge Sorted Arrays">
+      <option name="closed" value="true" />
+      <created>1721423818079</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1721423818079</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Leetcode: 53. Maximum Subarray">
+      <option name="closed" value="true" />
+      <created>1721464346090</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1721464346090</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Leetcode: 53. Maximum Subarray&#10;Approach1: Kadane's Algo&#10;Approach2: Divide and Conquer">
+      <option name="closed" value="true" />
+      <created>1721464639514</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1721464639514</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,9 +507,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LinkedList learning : search" />
-    <MESSAGE value="LinkedList learning : revision" />
-    <MESSAGE value="LearningDSA : Recursion" />
     <MESSAGE value="Arrays : Largest Element" />
     <MESSAGE value="Arrays : Second Largest Element" />
     <MESSAGE value="String : Unique Characters" />
@@ -487,7 +529,10 @@
     <MESSAGE value="Leetcode:&#10;167. Two Sum II - Input Array Is Sorted" />
     <MESSAGE value="Leetcode:&#10;80. Remove Duplicates from Sorted Array II" />
     <MESSAGE value="Index of FirstOccurrence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index of FirstOccurrence" />
+    <MESSAGE value="Leetcode: 88. Merge Sorted Arrays" />
+    <MESSAGE value="Leetcode: 53. Maximum Subarray" />
+    <MESSAGE value="Leetcode: 53. Maximum Subarray&#10;Approach1: Kadane's Algo&#10;Approach2: Divide and Conquer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode: 53. Maximum Subarray&#10;Approach1: Kadane's Algo&#10;Approach2: Divide and Conquer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
