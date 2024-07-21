@@ -54,7 +54,7 @@ nums is sorted in non-decreasing order.
 import java.util.Arrays;
 
 public class LC_26_RemoveDuplicatesFromSortedArray {
-    private static int removeDuplicates(int[] nums) {
+    private static int[] removeDuplicates(int[] nums) {
         int uniq = 0;
         for (int i=1; i < nums.length; i++) {
             if (nums[i] != nums[uniq]) {
@@ -63,18 +63,20 @@ public class LC_26_RemoveDuplicatesFromSortedArray {
             }
         }
 
-        return uniq+1;
+        int[] result = new int[uniq+1];
+        System.arraycopy(nums, 0, result, 0, uniq+1);
+        return result;
     }
 
     public static void main(String[] args) {
         // Ex. 1
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
-        int k = removeDuplicates(nums);
-        System.out.println(k);
+        int[] k = removeDuplicates(nums);
+        System.out.println(Arrays.toString(k));
 
         // Ex. 2
         int[] nums1 = {1,2,2};
-        int k1 = removeDuplicates(nums1);
-        System.out.println(k1);
+        int[] k1 = removeDuplicates(nums1);
+        System.out.println(Arrays.toString(k1));
     }
 }
