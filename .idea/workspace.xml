@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="top150interview/LC_26_RemoveDuplicatesFromSortedArray.java">
-      <change afterPath="$PROJECT_DIR$/Stack/src/learning/BalancedParenthesis.java" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stack/learning/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stack/learning/Test01.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.BalancedParenthesis.executor&quot;: &quot;Run&quot;,
     &quot;Application.BinarySearch.executor&quot;: &quot;Run&quot;,
     &quot;Application.BinarySearchRecursive.executor&quot;: &quot;Run&quot;,
     &quot;Application.BubbleSort.executor&quot;: &quot;Run&quot;,
@@ -56,6 +58,8 @@
     &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
     &quot;Application.FirstOccurrence.executor&quot;: &quot;Debug&quot;,
     &quot;Application.IsSortedAndRotated.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC_125_ValidPalindrome.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LC_189_RotateArray.executor&quot;: &quot;Run&quot;,
     &quot;Application.LC_26_RemoveDuplicatesFromSortedArray.executor&quot;: &quot;Run&quot;,
     &quot;Application.LC_27_RemoveElement.executor&quot;: &quot;Run&quot;,
     &quot;Application.LC_88_MergeSortedArray.executor&quot;: &quot;Run&quot;,
@@ -67,12 +71,13 @@
     &quot;Application.MergeSortedArray.executor&quot;: &quot;Run&quot;,
     &quot;Application.MergeTwoSortedArrays.executor&quot;: &quot;Run&quot;,
     &quot;Application.Multiply.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalindromeNumber.executor&quot;: &quot;Run&quot;,
     &quot;Application.PowerOfN.executor&quot;: &quot;Run&quot;,
     &quot;Application.Problem01.executor&quot;: &quot;Run&quot;,
     &quot;Application.RemoveDuplicates.executor&quot;: &quot;Run&quot;,
     &quot;Application.ReverseString.executor&quot;: &quot;Run&quot;,
     &quot;Application.SecondLargest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecondSmallest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SecondSmallest.executor&quot;: &quot;Debug&quot;,
     &quot;Application.SumOfArray.executor&quot;: &quot;Run&quot;,
     &quot;Application.Test01.executor&quot;: &quot;Run&quot;,
     &quot;Application.Test02.executor&quot;: &quot;Debug&quot;,
@@ -95,7 +100,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;D:/Practice/DSA/Leetcode Top 150 Interview Questions/src&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Practice/DSA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Practice/SBMS&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -475,7 +480,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721576484949</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="BalancedParenthesis.java">
+      <option name="closed" value="true" />
+      <created>1722005059397</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1722005059397</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Arrays : Second Largest Element" />
     <MESSAGE value="String : Unique Characters" />
     <MESSAGE value="Arrays : Sorted or not" />
     <MESSAGE value="Searching : LinearSearch01" />
@@ -543,7 +555,8 @@
     <MESSAGE value="Leetcode: 53. Maximum Subarray" />
     <MESSAGE value="Leetcode: 53. Maximum Subarray&#10;Approach1: Kadane's Algo&#10;Approach2: Divide and Conquer" />
     <MESSAGE value="top150interview/LC_26_RemoveDuplicatesFromSortedArray.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="top150interview/LC_26_RemoveDuplicatesFromSortedArray.java" />
+    <MESSAGE value="BalancedParenthesis.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="BalancedParenthesis.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
