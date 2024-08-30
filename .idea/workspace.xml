@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3318dfcd-3fcf-47fc-9c20-0dcfad926f64" name="Changes" comment="Gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Stack/learning/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stack/learning/Test01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arrays/src/leetcode/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/src/leetcode/RemoveDuplicates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
@@ -45,68 +43,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.BalancedParenthesis.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BinarySearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BinarySearchRecursive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BubbleSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CheckSorted.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DeleteNode.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Factorial.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FirstOccurrence.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.IsSortedAndRotated.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC_125_ValidPalindrome.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC_189_RotateArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC_26_RemoveDuplicatesFromSortedArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC_27_RemoveElement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LC_88_MergeSortedArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LargestElement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LeftShift.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LeftShiftByOne.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinearSearch01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MergeSortedArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MergeTwoSortedArrays.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Multiply.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PalindromeNumber.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PowerOfN.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Problem01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RemoveDuplicates.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ReverseString.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecondLargest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SecondSmallest.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.SumOfArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test02.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Test03.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TowersOfHanoi.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TwoSum.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TwoSum_Brute.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TwoSum_SortedArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UniqueCharacters.executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Notifications&quot;: &quot;VCS notifications&quot;,
-    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
-    &quot;Notification.DoNotAsk-Vcs Notifications&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Practice/DSA/Leetcode Top 150 Interview Questions/src&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Practice/SBMS&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.BalancedParenthesis.executor": "Run",
+    "Application.BinarySearch.executor": "Run",
+    "Application.BinarySearchRecursive.executor": "Run",
+    "Application.BubbleSort.executor": "Run",
+    "Application.CheckSorted.executor": "Run",
+    "Application.DeleteNode.executor": "Run",
+    "Application.Factorial.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
+    "Application.FirstOccurrence.executor": "Debug",
+    "Application.IsSortedAndRotated.executor": "Run",
+    "Application.LC_125_ValidPalindrome.executor": "Run",
+    "Application.LC_189_RotateArray.executor": "Run",
+    "Application.LC_26_RemoveDuplicatesFromSortedArray.executor": "Run",
+    "Application.LC_27_RemoveElement.executor": "Run",
+    "Application.LC_88_MergeSortedArray.executor": "Run",
+    "Application.LargestElement.executor": "Run",
+    "Application.LeftShift.executor": "Run",
+    "Application.LeftShiftByOne.executor": "Run",
+    "Application.LinearSearch01.executor": "Run",
+    "Application.MergeSort.executor": "Run",
+    "Application.MergeSortedArray.executor": "Run",
+    "Application.MergeTwoSortedArrays.executor": "Run",
+    "Application.Multiply.executor": "Run",
+    "Application.PalindromeNumber.executor": "Run",
+    "Application.PowerOfN.executor": "Run",
+    "Application.Problem01.executor": "Run",
+    "Application.RemoveDuplicates.executor": "Run",
+    "Application.ReverseString.executor": "Run",
+    "Application.SecondLargest.executor": "Run",
+    "Application.SecondSmallest.executor": "Debug",
+    "Application.SumOfArray.executor": "Run",
+    "Application.Test01.executor": "Run",
+    "Application.Test02.executor": "Debug",
+    "Application.Test03.executor": "Run",
+    "Application.Test1.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.Test3.executor": "Run",
+    "Application.TowersOfHanoi.executor": "Run",
+    "Application.TwoSum.executor": "Run",
+    "Application.TwoSum_Brute.executor": "Run",
+    "Application.TwoSum_SortedArray.executor": "Run",
+    "Application.UniqueCharacters.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "Notification.DoNotAsk-Vcs Notifications": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/Practice/DSA/Leetcode Top 150 Interview Questions/src",
+    "last_opened_file_path": "D:/Practice/SBMS",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Practice\DSA\Arrays\src\leetcode" />
@@ -488,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722005059397</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Gitignore">
+      <option name="closed" value="true" />
+      <created>1722663205444</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1722663205444</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="String : Unique Characters" />
     <MESSAGE value="Arrays : Sorted or not" />
     <MESSAGE value="Searching : LinearSearch01" />
     <MESSAGE value="Searching : BinarySearchIterative, BinarySearchRecursive" />
@@ -556,7 +561,8 @@
     <MESSAGE value="Leetcode: 53. Maximum Subarray&#10;Approach1: Kadane's Algo&#10;Approach2: Divide and Conquer" />
     <MESSAGE value="top150interview/LC_26_RemoveDuplicatesFromSortedArray.java" />
     <MESSAGE value="BalancedParenthesis.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="BalancedParenthesis.java" />
+    <MESSAGE value="Gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -571,6 +577,11 @@
           <line>12</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Arrays/src/leetcode/RemoveDuplicates.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Searching/src/searching/problems/IndexOfFirstOccurrence.java</url>
           <line>16</line>
@@ -579,6 +590,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Arrays/src/leetcode/RemoveDuplicates.java</url>
+          <line>69</line>
+          <properties class="leetcode.RemoveDuplicates" method="removeDuplicatesEff">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
