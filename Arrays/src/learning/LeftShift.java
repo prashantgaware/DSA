@@ -28,4 +28,10 @@ public class LeftShift {
 
         return arr;
     }
+
+    private static int[] leftRotateByK(int[] arr, int k) {
+
+
+        return arr;
+    }
 }
