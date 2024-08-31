@@ -27,7 +27,7 @@ package leetcode;
     1 <= nums[i] <= 105
  */
 
-public class FindNumbersWithEvenDigits {
+public class LC_1295_FindNumbersWithEvenDigits {
     public static void main(String[] args) {
         int[] nums1 = {12, 345, 2, 6, 7896};
         int[] nums2 = {555, 901, 482, 1771};

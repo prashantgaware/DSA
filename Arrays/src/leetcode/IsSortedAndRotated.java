@@ -38,7 +38,7 @@ package leetcode;
     1 <= nums[i] <= 100
  */
 
-public class IsSortedAndRotated {
+public class LC_1752_IsSortedAndRotated {
     public boolean check(int[] nums) {
         int countBreaks = 0;
         int n = nums.length;
@@ -56,7 +56,7 @@ public class IsSortedAndRotated {
     }
 
     public static void main(String[] args) {
-        IsSortedAndRotated sol = new IsSortedAndRotated();
+        LC_1752_IsSortedAndRotated sol = new LC_1752_IsSortedAndRotated();
         System.out.println(sol.check(new int[]{3, 4, 5, 1, 2}));
         System.out.println(sol.check(new int[]{2, 1, 3, 4}));
         System.out.println(sol.check(new int[]{1, 2, 3}));

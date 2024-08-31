@@ -39,7 +39,7 @@ package leetcode;
     Try to come up with as many solutions as you can. There are at least three different ways to solve this problem.
     Could you do it in-place with O(1) extra space?
 */
-public class LeftRotateByD {
+public class LC_189_LeftRotateByD {
     private static void leftRotateByD(int[] arr, int d) {
         int[] temp = new int[d];
         for (int i=0; i<d; i++)

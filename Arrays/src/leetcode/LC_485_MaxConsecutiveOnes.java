@@ -1,6 +1,6 @@
 package leetcode;
     /*
-        Max Consecutive Ones
+        485. Max Consecutive Ones
 
         Given a binary array nums, return the maximum number of consecutive 1's in the array.
 
@@ -21,7 +21,7 @@ package leetcode;
         nums[i] is either 0 or 1.
      */
 
-public class MaxConsecutiveOnes {
+public class LC_485_MaxConsecutiveOnes {
     public static void main(String[] args) {
         int[] nums1 = {1, 1, 0, 1, 1, 1};
         int[] nums2 = {1, 0, 1, 1, 0, 1};
