@@ -3,6 +3,7 @@
 *.xml
 *.class
 
+
 # Log file
 *.log
 
