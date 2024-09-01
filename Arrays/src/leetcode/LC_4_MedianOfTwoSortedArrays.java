@@ -33,7 +33,7 @@ package leetcode;
     -106 <= nums1[i], nums2[i] <= 106
 */
 
-public class MedianOfTwoSortedArrays {
+public class LC_4_MedianOfTwoSortedArrays {
     public static void main(String[] args) {
         int[] nums1 = {1, 3};
         int[] nums2 = {2};

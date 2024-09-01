@@ -38,7 +38,7 @@ package leetcode;
     Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 */
 
-public class MaximumSubArray {
+public class LC_53_MaximumSubArray {
     /*
     Approach 1: Kadane's Algorithm
     Kadane's Algorithm is an efficient way to solve this problem with a time complexity of O(n).

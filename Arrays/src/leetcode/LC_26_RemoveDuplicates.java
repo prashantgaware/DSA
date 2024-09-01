@@ -50,7 +50,7 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class RemoveDuplicates {
+public class LC_26_RemoveDuplicates {
     public static void main(String[] args) {
         int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int k = removeDuplicatesUsingSet(nums);

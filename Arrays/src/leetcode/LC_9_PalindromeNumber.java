@@ -35,7 +35,7 @@ Constraints:
 -231 <= x <= 231 - 1
 */
 
-public class PalindromeNumber {
+public class LC_9_PalindromeNumber {
     private static boolean isPalindrome(int x) {
         int temp = x;
         int rev = 0;

@@ -45,7 +45,7 @@ package leetcode;
 
 */
 
-public class TwoSum_SortedArray {
+public class LC_1_TwoSum_SortedArray {
     public static void main(String[] args) {
         int[] array = {2, 7, 11, 15};
         int target = 9;

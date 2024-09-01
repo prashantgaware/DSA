@@ -54,7 +54,7 @@ package leetcode;
         nums is sorted in non-decreasing order.
 */
 
-public class RemoveDuplicatesFromSortedArray {
+public class LC_80_RemoveDuplicatesFromSortedArray {
 
     public static int removeDuplicates(int[] nums) {
         int k = 0;

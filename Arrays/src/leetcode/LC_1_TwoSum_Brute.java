@@ -1,6 +1,6 @@
 package leetcode;
 
-public class TwoSum_Brute {
+public class LC_1_TwoSum_Brute {
     public static int[] twoSumBrute(int[] array, int target) {
         int arrayLength = array.length;
         for (int i=0; i<arrayLength; i++) {

@@ -39,7 +39,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TwoSum {
+public class LC_1_TwoSum {
     public static void main(String[] args) {
         int[] nums1 = {2, 7, 11, 15};
         int target1 = 9;
