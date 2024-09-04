@@ -6,6 +6,7 @@ public class ReverseString {
     public static void main(String[] args) {
         System.out.println(reverseWord("GeeksForGeeks"));
         System.out.println(reverseWordUsingStack("GeeksForGeeks"));
+        System.out.println(reverseStringUsingTwoPointer("India"));
     }
 
     private static String reverseWordUsingStack(String string) {
@@ -22,6 +23,28 @@ public class ReverseString {
         }
 
         return reversed.toString();
+    }
+
+    /**
+     * Reversing String using two pointer approach
+     * @param str String
+     * @return Reversed String
+     */
+    private static String reverseStringUsingTwoPointer(String str) {
+        char[] charArray = str.toCharArray();
+        int left = 0;
+        int right = charArray.length-1;
+
+        while (left < right) {
+            char temp = charArray[left];
+            charArray[left] = charArray[right];
+            charArray[right] = temp;
+
+            left++;
+            right--;
+        }
+
+        return new String(charArray);
     }
 
     private static String reverseWord(String string) {
