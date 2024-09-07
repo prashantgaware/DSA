@@ -32,6 +32,10 @@ package top150interview;
     Follow-up: Could you solve the problem in linear time and in O(1) space?
 */
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class LC_169_MajorityElement {
 
     private static int majorityElement (int[] arr) {
@@ -51,8 +55,25 @@ public class LC_169_MajorityElement {
         return -1;
     }
 
+    private static int majorityElementUsingHashing( int[] list) {
+        Map<Integer, Integer> hm = new HashMap<>();
+        for (int i : list) {
+            int val = hm.getOrDefault(i, 0);
+            hm.put(i, val + 1);
+        }
+
+        for (Map.Entry<Integer, Integer> it : hm.entrySet()) {
+            if (it.getValue() > (list.length / 2)) {
+                return it.getKey();
+            }
+        }
+
+        return -1;
+    }
+
     public static void main(String[] args) {
         int[] arr = {1,4,4,6,7,4,4};
-        System.out.println(majorityElement(arr));
+        System.out.println("Majority Element: " + majorityElement(arr));
+        System.out.println("Majority Element: " + majorityElementUsingHashing(arr));
     }
 }
