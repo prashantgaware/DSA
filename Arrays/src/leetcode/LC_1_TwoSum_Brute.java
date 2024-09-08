@@ -2,9 +2,9 @@ package leetcode;
 
 public class LC_1_TwoSum_Brute {
     public static int[] twoSumBrute(int[] array, int target) {
-        int arrayLength = array.length;
-        for (int i=0; i<arrayLength; i++) {
-            for (int j=i+1; j<arrayLength; j++) {
+        int n = array.length;
+        for (int i=0; i<n; i++) {
+            for (int j=i+1; j<n; j++) {
                 if (array[i] + array[j] == target){
                     return new int[]{i, j};
                 }
