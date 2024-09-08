@@ -16,7 +16,7 @@ public class IndexOfLastOccurrence {
      * @param key  The element to search for
      * @return index of the last occurrence of key
      */
-    private static int indexOfLastOccurrenceRecursive(int[] arr, int low, int high, int key) {
+    public static int indexOfLastOccurrenceRecursive(int[] arr, int low, int high, int key) {
         if (low > high)
             return -1;
 

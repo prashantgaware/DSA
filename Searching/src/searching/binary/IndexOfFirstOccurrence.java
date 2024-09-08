@@ -8,7 +8,7 @@ public class IndexOfFirstOccurrence {
         System.out.println(indexOfFirstOccurrenceRecursive(nums, 0, nums.length-1, 7));
     }
 
-    private static int indexOfFirstOccurrence (int[] arr, int key) {
+    public static int indexOfFirstOccurrence (int[] arr, int key) {
         for (int i=0; i < arr.length; i++) {
             if (arr[i] == key)
                 return i;
@@ -26,7 +26,7 @@ public class IndexOfFirstOccurrence {
      * @param key
      * @return index of first occurrence of key
      */
-    private static int indexOfFirstOccurrenceRecursive(int[] arr, int low, int high, int key) {
+    public static int indexOfFirstOccurrenceRecursive(int[] arr, int low, int high, int key) {
         if (low > high)
             return -1;
 
