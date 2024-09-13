@@ -25,6 +25,6 @@ public class ArraylistExample {
         cl.add(5);
         cl.add(3);
         cl.add(45);
-
+        System.out.println(cl);
     }
 }
