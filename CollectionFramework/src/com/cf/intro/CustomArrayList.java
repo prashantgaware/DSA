@@ -55,4 +55,36 @@ public class CustomArrayList {
 
         return s.toString();
     }
+
+    public Object get(int index) {
+        if (index >= a.length || index < 0){
+            throw new IllegalArgumentException("Invalid index.");
+        }
+        Object obj = a[index];
+
+        return obj;
+    }
+
+    public int size() {
+        int length = 0;
+        for (Object obj : a)
+            length++;
+
+        return length;
+    }
+
+    public Object remove(int index) {
+        if (index < 0 || index > size()) {
+            throw new IllegalArgumentException("Invalid index.");
+        }
+
+        Object obj = (Object) a[index];
+        for (int i = index; i < size()-1; i++) {
+            a[i] = a[i+1];
+        }
+
+        a[size()-1] = null;
+
+        return obj;
+    }
 }
