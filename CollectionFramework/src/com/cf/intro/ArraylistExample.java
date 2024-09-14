@@ -8,12 +8,13 @@ public class ArraylistExample {
 
         ArrayList al = new ArrayList(4);
 
-        /*al.add(new Employee());
+        al.add(new Employee());
         al.add(10);
         al.add(20);
         al.add(30);
         al.add(40);
-        al.add(50);*/
+        al.add(50);
+        al.remove(3);
 
         System.out.println(al);
         System.out.println(al.size());
@@ -26,10 +27,12 @@ public class ArraylistExample {
         cl.add(5);
         cl.add(3);
         cl.add(45);
+        cl.add(46);
         System.out.println(cl);         // toString impl
         System.out.println(cl.get(6));  // get() impl
         System.out.println(cl.size());  // size() impl
-        System.out.println(cl.remove(3));
+        System.out.println(cl.remove(0));
+        System.out.println(cl);
 
     }
 }

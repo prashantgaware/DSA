@@ -44,11 +44,13 @@ public class CustomArrayList {
         StringBuilder s = new StringBuilder();
         s.append("[");
         for (int i = 0; i < a.length; i++) {
-            if (i == (a.length-1))
-                s.append(a[i]);         // this to remove last comma.
+            if (i == (a.length-1)) {
+                if (null != a[i])
+                    s.append(a[i]);     // this to remove last comma.
+            }
             else {
                 if (null != a[i])       // this to not add null
-                    s.append(a[i]).append(", ");
+                    s.append(a[i] + ", ");
             }
         }
         s.append("]");
@@ -74,16 +76,16 @@ public class CustomArrayList {
     }
 
     public Object remove(int index) {
-        if (index < 0 || index > size()) {
+        int size = size();
+        if (index < 0 || index > size) {
             throw new IllegalArgumentException("Invalid index.");
         }
 
-        Object obj = (Object) a[index];
-        for (int i = index; i < size()-1; i++) {
+        Object obj = a[index];
+        for (int i = index; i < size-1; i++)
             a[i] = a[i+1];
-        }
 
-        a[size()-1] = null;
+        a[size-1] = null;
 
         return obj;
     }
