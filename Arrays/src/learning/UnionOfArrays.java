@@ -55,6 +55,10 @@ public class UnionOfArrays {
         List<Integer> unionOfArrays = findUnion(arr1,arr2,m,n);
         for (int i : unionOfArrays)
             System.out.print(i + "  ");
+        System.out.println();
+        List<Integer> unionOpt = unionOptimized(arr1,arr2,m,n);
+        for (int i : unionOpt)
+            System.out.print(i + "  ");
      }
 
     private static List<Integer> findUnion(int[] arr1, int[] arr2, int m , int n) {
@@ -92,6 +96,56 @@ public class UnionOfArrays {
                 }
                 j++;
             }
+        }
+
+        return union;
+    }
+
+    private static List<Integer> unionOptimized(int[] arr1, int[]arr2, int n , int m) {
+        ArrayList<Integer> union = new ArrayList<>();
+        int i = 0, j = 0;
+
+        // Traverse both arrays using two pointers
+        while (i < n && j < m) {
+            // Skip duplicate elements in arr1
+            if (i > 0 && arr1[i] == arr1[i - 1]) {
+                i++;
+                continue;
+            }
+
+            // Skip duplicate elements in arr2
+            if (j > 0 && arr2[j] == arr2[j - 1]) {
+                j++;
+                continue;
+            }
+
+            // Add smaller element to the union and move the pointer
+            if (arr1[i] < arr2[j]) {
+                union.add(arr1[i++]);
+            } else if (arr1[i] > arr2[j]) {
+                union.add(arr2[j++]);
+            } else {
+                // If elements are equal, add any one and move both pointers
+                union.add(arr1[i]);
+                i++;
+                j++;
+            }
+        }
+
+        // Add remaining elements from arr1
+        while (i < n) {
+            if (i == 0 || arr1[i] != arr1[i - 1]) {
+                union.add(arr1[i]);
+            }
+            i++;
+        }
+
+        // Add remaining elements from arr2
+        while (j < m) {
+            if (j == 0 || arr2[j] != arr2[j - 1]) {
+                union.add(arr2[j]);
+            }
+            j++;
         }
 
         return union;
