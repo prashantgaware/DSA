@@ -6,10 +6,10 @@ import java.util.Map;
 public class HashmapImpl {
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
-        map.put("A", 55);
-        map.put("A", 56);
-        map.put("A", 57);
-        map.put("A", 58);
+        map.put("InheritanceExample", 55);
+        map.put("InheritanceExample", 56);
+        map.put("InheritanceExample", 57);
+        map.put("InheritanceExample", 58);
         System.out.println(map.size());
         System.out.println(map);
         System.out.println();

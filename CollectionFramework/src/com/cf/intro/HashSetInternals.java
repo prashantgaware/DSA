@@ -6,13 +6,13 @@ import java.util.Set;
 public class HashSetInternals {
     public static void main(String[] args) {
         Set<String> hs = new HashSet<>();
-        hs.add("A");            // map.put("A",PRESENT)
+        hs.add("InheritanceExample");            // map.put("InheritanceExample",PRESENT)
         hs.add("B");            // map.put("B",PRESENT)
         hs.add("C");            // map.put("C",PRESENT)
         hs.add("D");            // map.put("D",PRESENT)
         hs.add("E");            // map.put("E",PRESENT)
         System.out.println(hs.size());
-        hs.add("A");
+        hs.add("InheritanceExample");
         System.out.println(hs.size());
 
         Set<Employee> empSet = new HashSet<>();
