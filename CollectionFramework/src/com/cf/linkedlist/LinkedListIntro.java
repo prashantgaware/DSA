@@ -11,8 +11,12 @@ public class LinkedListIntro {
         cll.insert(20);
         cll.insert(30);
         cll.insert(40);
+//        cll.insertAtFirst(50);
 
-        cll.display();
+//        cll.display();
+        String customLl = cll.toString();
+        System.out.println(customLl);
+        System.out.println(cll.get(2));
         System.out.println();
 
 
