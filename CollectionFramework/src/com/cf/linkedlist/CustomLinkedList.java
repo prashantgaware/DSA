@@ -1,5 +1,7 @@
 package com.cf.linkedlist;
 
+import java.util.Currency;
+
 public class CustomLinkedList {
 
     CustomNode head;
@@ -55,6 +57,30 @@ public class CustomLinkedList {
 
     /**
      *
+     * @param data
+     * @param afterNode
+     */
+    public void insertAtSpecifiedIndex(Object data, Object afterNode) {
+        CustomNode newNode = new CustomNode(data, null, index);
+        if (head != null) {
+            CustomNode current = head;
+            while (current != null) {
+                if (current.data.equals(afterNode)) {
+                    CustomNode afterNewNode = current.next;
+                    current.next = newNode;
+                    newNode.next = afterNewNode;
+                    break;
+                } else {
+                    current = current.next;
+                }
+            }
+            if (current.next.equals(afterNode))
+                current.next = newNode;
+        }
+    }
+
+    /**
+     *
      */
     public void display() {
         if (head == null) {
@@ -98,26 +124,26 @@ public class CustomLinkedList {
      * @return
      */
     public Object get(int indexPassed) {
-        if (indexPassed < 0 && indexPassed > index) {
+        // Check if the index is valid
+        if (indexPassed < 0 || indexPassed >= index) {
             throw new IllegalArgumentException("Illegal index.");
         }
 
+        // If the list is empty, throw an exception
         if (head == null) {
             throw new IllegalArgumentException("LinkedList is empty");
-        } else {
-            CustomNode current = head;
-            while (current.next != null) {
-                if (current.customNodeIndex == indexPassed) {
-                    return current.data;
-                } else {
-                    current = current.next;
-                }
-            }
+        }
+
+        CustomNode current = head;
+        // Traverse the list to find the node at the given index
+        while (current != null) {
             if (current.customNodeIndex == indexPassed) {
                 return current.data;
             }
+            current = current.next;
         }
 
+        // Return null if not found (should never happen with valid index)
         return null;
     }
 }

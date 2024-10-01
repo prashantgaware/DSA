@@ -11,7 +11,8 @@ public class LinkedListIntro {
         cll.insert(20);
         cll.insert(30);
         cll.insert(40);
-//        cll.insertAtFirst(50);
+        cll.insertAtFirst(50);
+        cll.insertAtSpecifiedIndex(60,30);
 
 //        cll.display();
         String customLl = cll.toString();
