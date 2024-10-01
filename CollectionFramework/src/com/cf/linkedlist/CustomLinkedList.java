@@ -146,4 +146,35 @@ public class CustomLinkedList {
         // Return null if not found (should never happen with valid index)
         return null;
     }
+
+    /**
+     * Method to remove a node with specific data from the linked list.
+     * @param data The data of the node to be removed.
+     */
+    public void remove(Object data) {
+        if (head != null) {
+            CustomNode current = head;
+            CustomNode previous = null;
+
+            // Handle the case where the head node is the one to be removed
+            if (current.data.equals(data)) {
+                // Simply set head to the next node, effectively removing the current head
+                head = current.next;
+                current.next = null;  // Clean up the reference
+                return;
+            }
+
+            while (current.next != null) {
+                if (current.data.equals(data)) {
+                    CustomNode nextNodeAddr = current.next;
+                    previous.next = nextNodeAddr;
+                    current.next = null;
+                    break;
+                } else {
+                    previous = current;
+                    current = current.next;
+                }
+            }
+        }
+    }
 }
