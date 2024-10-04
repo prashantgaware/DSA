@@ -1,7 +1,5 @@
 package com.cf.linkedlist;
 
-import java.util.Currency;
-
 public class CustomLinkedList {
 
     CustomNode head;
@@ -156,11 +154,19 @@ public class CustomLinkedList {
             CustomNode current = head;
             CustomNode previous = null;
 
+            /*
             // Handle the case where the head node is the one to be removed
             if (current.data.equals(data)) {
                 // Simply set head to the next node, effectively removing the current head
                 head = current.next;
                 current.next = null;  // Clean up the reference
+                return;
+            }
+            */
+            if (head.data.equals(data)) {
+                CustomNode tempHead = head.next;
+                head.next = null;
+                head = tempHead;
                 return;
             }
 
@@ -174,6 +180,10 @@ public class CustomLinkedList {
                     previous = current;
                     current = current.next;
                 }
+            }
+            if (current.data.equals(data)) {
+                previous.next = null;
+                current = null;
             }
         }
     }

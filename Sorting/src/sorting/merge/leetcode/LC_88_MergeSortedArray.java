@@ -46,7 +46,7 @@ package sorting.merge.leetcode;
     Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 * */
 
-public class MergeSortedArray {
+public class LC_88_MergeSortedArray {
     private static void mergeSortedArray(int[] nums1, int m, int[] nums2, int n) {
         int i = m-1;
         int j = n-1;
