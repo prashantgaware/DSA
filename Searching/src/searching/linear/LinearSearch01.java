@@ -23,14 +23,10 @@ public class LinearSearch01 {
 
     private static int lSearchSorted(int[] arr, int target) {
         for (int i=0; i<arr.length; i++) {
-            if (target <= arr[i]) {
-                break;
-            }
-
-            if (i == target || target < arr[i]) {
-                System.out.println("Not found.");
-            } else {
+            if (arr[i] == target) {
                 return i;
+            } else if (arr[i] > target) {
+                break;
             }
         }
 
@@ -39,11 +35,8 @@ public class LinearSearch01 {
 
     private static int lSearchUnsorted(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
-            if (target == arr[i]) {
+            if (arr[i] == target) {
                 return i;
-            } else if (target < arr[i]) {
-                System.out.println("Not found.");
-                return -1;
             }
         }
 
