@@ -35,7 +35,7 @@ class Node {
     }
 }
 
-public class DeleteNode {
+public class LC_237_DeleteNodeInLL {
 
     public static void deleteNode(Node node){
         node.val = node.next.val;

@@ -65,7 +65,7 @@ public class UnionOfArrays {
         List<Integer> union = new ArrayList<>();
         int i = 0, j = 0;
 
-        while (i<m && j<n) {
+        /*while (i<m && j<n) {
             if (arr1[i] == arr2[j]) {
                 if (union.isEmpty() || union.get(union.size())-1 != arr1[i])
                     union.add(arr1[i]);
@@ -94,6 +94,27 @@ public class UnionOfArrays {
                 if (union.isEmpty() || union.get(union.size() - 1) != arr2[j]) {
                     union.add(arr2[j]);
                 }
+                j++;
+            }
+        }*/
+
+        // Traverse both arrays using two pointers
+        while (i < m && j < n) {
+            if (arr1[i] < arr2[j]) {
+                if (union.isEmpty() || union.get(union.size() - 1) != arr1[i]) {
+                    union.add(arr1[i]);
+                }
+                i++;
+            } else if (arr1[i] > arr2[j]) {
+                if (union.isEmpty() || union.get(union.size() - 1) != arr2[j]) {
+                    union.add(arr2[j]);
+                }
+                j++;
+            } else {
+                if (union.isEmpty() || union.get(union.size() - 1) != arr1[i]) {
+                    union.add(arr1[i]);
+                }
+                i++;
                 j++;
             }
         }

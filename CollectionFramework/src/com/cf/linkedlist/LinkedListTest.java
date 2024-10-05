@@ -9,6 +9,6 @@ public class LinkedListTest {
         cle.insertAtSpecifiedPosition(15, 2);
         cle.remove(20);
         System.out.println(cle);
-
+        System.out.println(cle.get(2));
     }
 }

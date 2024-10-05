@@ -119,4 +119,19 @@ public class CustomLLExample {
         assert current != null;
         previous.next = current.next;
     }
+
+    /**
+     *
+     */
+    public Object get(int index) {
+        Node current = head;
+        int currentIndex = 0;
+        while (current != null && currentIndex < index) {
+            current = current.next;
+            currentIndex++;
+        }
+
+        assert current != null;
+        return current.data;
+    }
 }
