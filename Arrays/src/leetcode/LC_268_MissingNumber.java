@@ -41,11 +41,28 @@ public class LC_268_MissingNumber {
         return sum;
     }
 
+    private static int findMissingNum(int[] arr) {
+        for (int i=0; i< arr.length; i++) {
+            boolean flag = false;
+            for (int j=0; j<arr.length; j++) {
+                if (arr[j] == i) {
+                    flag = true;
+                    break;
+                }
+            }
+
+            if (!flag)
+                return i;
+        }
+
+        return -1;
+    }
+
     public static void main(String[] args) {
         int[] nums = {3,0,1};
         System.out.println(findMissingNumber(nums));
 
-        int[] nums1 = {0,1};
-        System.out.println(findMissingNumber(nums1));
+        int[] nums1 = {0,1,2,3,4,5,6,9};
+        System.out.println(findMissingNum(nums1));
     }
 }
