@@ -1,0 +1,41 @@
+Stack:
+
+    - First In Last Out (FILO)
+    - Last In First Out (LIFO)
+    - Stack is a subclass of Vector class
+    - there are 5 constructors in Stack class
+    - Stack class contains 6 methods
+        1. push(Object o) - to insert an element
+        2. pop() - to remove an element
+        3. peek() - to get the top element
+        4. empty() - to check whether stack is empty or not
+        5. search(Object o) - to search an element
+        6. capacity() - to get the capacity of stack
+    - Stack class is synchronized
+
+    pop()
+    - remove the top element
+    - return the top element
+    - throw EmptyStackException if stack is empty
+
+    peek()
+    - return the top element
+    - throw EmptyStackException if stack is empty
+
+    push(Object o)
+    - insert an element
+    - throw NullPointerException if element is null
+    - return the element
+    # Difference between add() and push()
+        - add() is used to insert an element in collection
+        - push() is used to insert an element in stack
+        - add() return boolean value and push() return the element
+
+    search(Object o)
+    - return the position of the element
+    - return -1 if element is not found
+    - return 1 if element is found at top
+    - return 2 if element is found at second position from top
+
+    empty()
+    - return true if stack is empty
