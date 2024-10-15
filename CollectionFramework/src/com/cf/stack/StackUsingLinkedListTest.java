@@ -2,6 +2,19 @@ package com.cf.stack;
 
 public class StackUsingLinkedListTest {
     public static void main(String[] args) {
+        CustomStackUsingLinkedList csll = new CustomStackUsingLinkedList();
+        csll.push(10);
+        csll.push(20);
+        csll.push(30);
+        csll.push(40);
+        csll.push(50);
+        System.out.println(csll);
+        System.out.println(csll.peek());
+        System.out.println(csll.pop());
+        csll.push(60);
+        System.out.println(csll);
+
+        System.out.println("##########################################");
         StackImplUsingLinkedList stack = new StackImplUsingLinkedList();
         stack.push(10);
         stack.push(20);
