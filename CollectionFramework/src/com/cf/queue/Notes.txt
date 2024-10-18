@@ -1,0 +1,81 @@
+Queue:
+    - Queue is an interface in java.util package.
+    - Queue is a child interface of Collection.
+    - Queue is used to store multiple elements before processing.
+    - Queue is used to store elements in FIFO (First In First Out) order.
+    - Queue is implemented by LinkedList, PriorityQueue, ArrayDeque, etc.
+    - Queue interface contains 6 methods
+        1. add(Object o) - to insert an element
+        2. offer(Object o) - to insert an element
+        3. remove() - to remove an element
+        4. poll() - to remove an element
+        5. element() - to get the head element
+        6. peek() - to get the head element
+
+    - add(Object o)
+        - insert an element
+        - throw IllegalStateException if queue is full
+        - throw NullPointerException if element is null
+        - return true if element is inserted successfully
+        - return false if element is not inserted successfully
+
+    - offer(Object o)
+        - insert an element
+        - return true if element is inserted successfully
+        - return false if element is not inserted successfully
+
+    - remove()
+        - remove the head element
+        - throw NoSuchElementException if queue is empty
+        - return the head element
+
+    - poll()
+        - remove the head element
+        - return the head element
+        - return null if queue is empty
+
+    - element()
+        - return the head element
+        - throw NoSuchElementException if queue is empty
+
+    - peek()
+        - return the head element
+        - return null if queue is empty
+
+
+    - Since, Queue is interface, it is implemented by LinkedList, PriorityQueue, ArrayDeque, ArrayBlockingQueue, etc.
+    - PriorityQueue is an unbounded queue based on a priority heap.
+    - PriorityQueue is implemented by PriorityQueue class.
+    - PriorityQueue is not synchronized.
+    - PriorityQueue is not thread safe.
+    - PriorityQueue is not ordered.
+    - PriorityQueue is not sorted.
+    - PriorityQueue is not null allowed.
+    - PriorityQueue is not capacity restricted.
+    - PriorityQueue is not resizable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
