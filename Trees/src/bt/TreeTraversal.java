@@ -1,5 +1,7 @@
 package bt;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class TreeTraversal {
@@ -111,5 +113,37 @@ public class TreeTraversal {
             postOrder(root.right);
             System.out.println(root.getData());
         }
+    }
+
+    /**
+     * Postorder traversal using iterative approach
+     * @param root root node of the tree
+     *             Time complexity: O(n)
+     *             Space complexity: O(n)
+     *             Approach:
+     *             Traverse the left subtree first,
+     *              then the right subtree and
+     *             then visit the root node
+     */
+    public List<Integer> postOrderIterative(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        Stack<TreeNode> output = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode current = stack.pop();
+            output.push(current);
+            if (current.left != null) {
+                stack.push(current.left);
+            } if (current.right != null) {
+                stack.push(current.right);
+            }
+        } while (!output.isEmpty()) {
+            result.add(output.pop().data);
+        }
+        return result;
     }
 }
