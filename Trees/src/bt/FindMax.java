@@ -4,6 +4,23 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class FindMax {
+    private static int maxInBT(TreeNode root) {
+        int max = Integer.MIN_VALUE;
+        if (root != null) {
+            int leftMax = maxInBT(root.left);
+            int rightMax = maxInBT(root.right);
+            if (leftMax > rightMax)
+                max = leftMax;
+            else
+                max = rightMax;
+
+            if (root.data > max)
+                max = root.data;
+        }
+
+        return max;
+    }
+
     private static int findMaxInBT(TreeNode root) {
         if (root == null)
             return Integer.MIN_VALUE;
@@ -52,6 +69,7 @@ public class FindMax {
         root.right.right = new TreeNode(9);
         root.right.right.left = new TreeNode(4);
 
+        System.out.println("Max element in the binary tree is: " + maxInBT(root));
         System.out.println("Max element in the binary tree is: " + findMaxInBT(root));
         System.out.println("Max element using iterative approach in the binary tree is: " + findMaxInBTIterative(root));
     }
