@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class NthNodeFromEnd {
+    static int counter = 0;
+
     public static int findNthNodeFromEnd(Node head, int n) {
         int length = 0;
         Node temp = head;
@@ -84,14 +86,33 @@ public class NthNodeFromEnd {
         return hm.get(target).data;
     }
 
+    public static Node findNthUsingRecursion(Node head, int n) {
+        if (head == null) return null;
+
+        Node result = findNthUsingRecursion(head.next, n);
+        counter++;
+
+        if (counter == n)
+            return head;
+
+        return result;
+    }
+
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(3);
         head.next.next.next = new Node(4);
         head.next.next.next.next = new Node(5);
-        System.out.println(findNthNodeFromEnd(head, 3));
-        System.out.println(findNthFromEndEff(head, 2));
-        System.out.println(findNthUsingArrayList(head, 1));
+        try {
+            System.out.println(findNthNodeFromEnd(head, 3));
+            System.out.println(findNthFromEndEff(head, 2));
+            System.out.println(findNthUsingArrayList(head, 1));
+            System.out.println(findNthUsingHashMap(head, 1));
+            Node val = findNthUsingRecursion(head, 1);
+            System.out.println(val.data);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
