@@ -16,9 +16,9 @@ public class TreeTraversal {
      *             then the right subtree
      *
      */
-    public void preOrder(TreeNode root) {
+    public static void preOrder(TreeNode root) {
         if (root != null) {
-            System.out.println(root.getData());
+            System.out.print(root.getData() + " ");
             preOrder(root.left);
             preOrder(root.right);
         }
@@ -36,7 +36,7 @@ public class TreeTraversal {
      *             then traverse the left subtree and
      *             then the right subtree
      */
-    public void preOrderIterative(TreeNode root) {
+    public static void preOrderIterative(TreeNode root) {
         if (root == null)
             return;
 
@@ -44,7 +44,7 @@ public class TreeTraversal {
         stack.push(root);
         while (!stack.isEmpty()) {
             TreeNode temp = stack.pop();
-            System.out.println(temp.getData());
+            System.out.print(temp.getData() + " ");
             if (temp.right != null)
                 stack.push(temp.right);
             if (temp.left != null)
@@ -62,10 +62,10 @@ public class TreeTraversal {
      *             then visit the root node and
      *             then traverse the right subtree
      */
-    public void inorder(TreeNode root) {
+    public static void inorder(TreeNode root) {
         if (root != null) {
             inorder(root.left);
-            System.out.println(root.getData());
+            System.out.print(root.getData() + " ");
             inorder(root.right);
         }
 
@@ -80,7 +80,7 @@ public class TreeTraversal {
      *             then visit the root node and
      *             then
      */
-    public void inorderIterative(TreeNode root) {
+    public static void inorderIterative(TreeNode root) {
         if (root == null)
             return;
 
@@ -92,7 +92,7 @@ public class TreeTraversal {
                 temp = temp.left;
             }
             temp = stack.pop();
-            System.out.println(temp.getData());
+            System.out.print(temp.getData() + " ");
             temp = temp.right;
         }
     }
@@ -107,11 +107,11 @@ public class TreeTraversal {
      *              then the right subtree and
      *             then visit the root node
      */
-    public void postOrder(TreeNode root) {
+    public static void postOrder(TreeNode root) {
         if (root != null) {
             postOrder(root.left);
             postOrder(root.right);
-            System.out.println(root.getData());
+            System.out.print(root.getData() + " ");
         }
     }
 
@@ -125,7 +125,7 @@ public class TreeTraversal {
      *              then the right subtree and
      *             then visit the root node
      */
-    public List<Integer> postOrderIterative(TreeNode root) {
+    public static List<Integer> postOrderIterative(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) {
             return result;
@@ -141,9 +141,47 @@ public class TreeTraversal {
             } if (current.right != null) {
                 stack.push(current.right);
             }
-        } while (!output.isEmpty()) {
+        }
+        while (!output.isEmpty()) {
             result.add(output.pop().data);
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(2);
+        root.left = new TreeNode(7);
+        root.right = new TreeNode(5);
+        root.left.left = new TreeNode(2);
+        root.left.right = new TreeNode(6);
+        root.left.right.left = new TreeNode(5);
+        root.left.right.right = new TreeNode(11);
+        root.right.right = new TreeNode(9);
+        root.right.right.left = new TreeNode(4);
+
+        System.out.println("Pre order recursive : ");
+        preOrder(root);
+        System.out.println();
+
+        System.out.println("Pre order iterative : ");
+        preOrderIterative(root);
+        System.out.println();
+
+        System.out.println("In order recursive : ");
+        inorder(root);
+        System.out.println();
+
+        System.out.println("In order iterative : ");
+        inorderIterative(root);
+        System.out.println();
+
+        System.out.println("Post order recursive : ");
+        postOrder(root);
+        System.out.println();
+
+        System.out.println("Post order iterative : ");
+        List<Integer> postIterative = postOrderIterative(root);
+        for (int i : postIterative)
+            System.out.print(i + " ");
     }
 }
