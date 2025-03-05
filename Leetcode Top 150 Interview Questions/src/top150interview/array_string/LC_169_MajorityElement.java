@@ -1,4 +1,4 @@
-package top150interview;
+package top150interview.array_string;
 
 /*
     169. Majority Element
@@ -33,7 +33,6 @@ package top150interview;
 */
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class LC_169_MajorityElement {

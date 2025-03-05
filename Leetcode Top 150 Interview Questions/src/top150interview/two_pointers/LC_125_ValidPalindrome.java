@@ -1,4 +1,4 @@
-package top150interview;
+package top150interview.two_pointers;
 
 /*
 125. Valid Palindrome

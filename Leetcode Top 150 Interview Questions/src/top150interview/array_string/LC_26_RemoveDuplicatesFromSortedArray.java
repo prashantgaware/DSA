@@ -1,4 +1,4 @@
-package top150interview;
+package top150interview.array_string;
 
 /*
 26. Remove Duplicates from Sorted Array
