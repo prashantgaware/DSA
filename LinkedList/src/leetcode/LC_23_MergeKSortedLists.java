@@ -8,6 +8,31 @@ import java.util.List;
 
 public class LC_23_MergeKSortedLists {
 
+    // This is a brute force approach
+    // Time complexity: O(nlogn) where n is the total number of elements in all lists
+    // Space complexity: O(n) for storing the elements in an array
+    public static Node mergeKSortedLists(Node[] lists)  {
+        ArrayList<Integer> values = new ArrayList<>();
+        for (Node list : lists) {
+            Node current = list;
+            while (current != null) {
+                values.add(current.val);
+                current = current.next;
+            }
+        }
+
+        Collections.sort(values);
+
+        Node dummy = new Node(0);
+        Node current = dummy;
+        for (int value : values) {
+            current.next = new Node(value);
+            current = current.next;
+        }
+
+        return dummy.next;
+     }
+
     public static Node mergeKListsBrute(Node[] lists) {
         if (lists == null || lists.length == 0) {
             return null;
