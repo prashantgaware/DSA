@@ -88,5 +88,19 @@ public class ReverseEveryKGroup {
             System.out.print(result.val + " ");
             result = result.next;
         }
+        System.out.println();
+
+        ListNode head2 = new ListNode(1);
+        head2.next = new ListNode(2);
+
+        head2.next.next = new ListNode(3);
+        head2.next.next.next = new ListNode(4);
+        head2.next.next.next.next = new ListNode(5);
+        ListNode result2 = reverseKGroupInPlaceTraversal(head2, k);
+        while (result2 != null) {
+            System.out.print(result2.val + " ");
+            result2 = result2.next;
+        }
+        System.out.println();
     }
 }
