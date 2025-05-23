@@ -12,9 +12,11 @@ class Node {
 
 public class StackUsingLL {
     private Node top;
+    private int height;
 
     public StackUsingLL() {
         this.top = null;
+        this.height = 0;
     }
 
     public boolean isEmpty() {
@@ -25,6 +27,7 @@ public class StackUsingLL {
         Node newNode = new Node(data);
         newNode.next = top;
         top = newNode;
+        height++;
     }
 
     public int pop() throws Exception {
@@ -33,6 +36,7 @@ public class StackUsingLL {
 
         int value = top.data;
         top = top.next;
+        height--;
         return value;
     }
 
