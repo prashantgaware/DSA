@@ -1,5 +1,7 @@
 package learning;
 
+import org.w3c.dom.ls.LSInput;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -65,5 +67,68 @@ public class CheckPalindrome {
         }
 
         return true;
+    }
+
+    /**
+     * This method checks if a linked list is a palindrome using the two-pointer technique.
+     * @param head the head of the linked list
+     * @return true if the linked list is a palindrome, false otherwise
+     * Time complexity: O(n)
+     * Space complexity: O(1)
+     * Approach:
+     * 1. Use the slow and fast pointer technique to find the middle of the linked list.
+     * 2. Reverse the second half of the linked list.
+     * 3. Compare the first half and the reversed second half of the linked list.
+     * 4. Restore the original linked list by reversing the second half again.
+     * 5. Return true if all values match, otherwise return false.
+     */
+    public static boolean isPalindromeUsingTwoPointers(ListNode head) {
+        if (head == null || head.next == null) {
+            return true;
+        }
+
+        ListNode firstHalfEnd = getMiddle(head);
+        ListNode startOfSecond = reverseSecondHalfOfList(firstHalfEnd.next);
+        firstHalfEnd.next = null;
+
+        ListNode firstHalfStart = head;
+        ListNode secondHalfStart = startOfSecond;
+        boolean isPalindrome = true;
+        while (firstHalfStart != null && secondHalfStart != null) {
+            if (firstHalfStart.val != secondHalfStart.val) {
+                isPalindrome = false;
+                break;
+            }
+            firstHalfStart = firstHalfStart.next;
+            secondHalfStart = secondHalfStart.next;
+        }
+
+        firstHalfEnd.next = reverseSecondHalfOfList(startOfSecond);
+
+        return isPalindrome;
+    }
+
+    private static ListNode reverseSecondHalfOfList(ListNode listNode) {
+        ListNode prev = null;
+        ListNode curr = listNode;
+        while (curr != null) {
+            ListNode temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
+        }
+
+        return prev;
+    }
+
+    private static ListNode getMiddle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
     }
 }
