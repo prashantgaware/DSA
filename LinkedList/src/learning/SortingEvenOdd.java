@@ -6,6 +6,20 @@ import java.util.List;
 import java.util.Map;
 
 public class SortingEvenOdd {
+    /**
+     * Reorders the linked list such that all even indexed nodes come before odd indexed nodes.
+     * @param head the head of the linked list
+     * @return the head of the reordered linked list
+     * Approach:
+     * 1. Traverse the linked list and maintain two separate lists: one for even indexed nodes and one for odd indexed nodes.
+     * 2. At each step, check the index of the node:
+     *   - If the index is even, add the node to the even list.
+     *   - If the index is odd, add the node to the odd list.
+     *   3. After traversing the list, connect the last node of the even list to the head of the odd list.
+     *   4. Set the next pointer of the last node of the odd list to null.
+     *   * Time Complexity: O(n), where n is the number of nodes in the linked list.
+     *   *   Space Complexity: O(1), as we are not using any extra space for storing nodes.
+     */
     public static ListNode sortingEvenOdd(ListNode head) {
         if (head == null || head.next == null) {
             return head;
