@@ -4,6 +4,27 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class RemoveDuplicates {
+    public static ListNode removeDuplicatesX(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode current = head;
+        while (current != null && current.next != null) {
+            ListNode runner = current;
+            while (runner.next != null) {
+                if (runner.next.val == current.val) {
+                    runner.next = runner.next.next;
+                } else {
+                    runner = runner.next;
+                }
+            }
+
+            current = current.next;
+        }
+        return head;
+    }
+
     public static void removeDuplicates(ListNode head) {
         if (head == null || head.next == null) {
             return; // No duplicates in an empty or single-node list
@@ -42,14 +63,14 @@ public class RemoveDuplicates {
             return; // No duplicates in an empty or single-node list
         }
 
-        Set<ListNode> seen = new HashSet<>();
+        Set<Integer> seen = new HashSet<>();
         ListNode current = head;
         ListNode previous = null;
         while (current != null) {
-            if (seen.contains(current)) {
+            if (seen.contains(current.val)) {
                 previous.next = current.next;
             } else {
-                seen.add(current);
+                seen.add(current.val);
                 previous = current;
             }
             current = current.next;
@@ -75,6 +96,38 @@ public class RemoveDuplicates {
 
         System.out.println("After removing duplicates:");
         printList(node1);
+
+        // Reset the list for testing removeDuplicatesUsingHashing
+        node1 = new ListNode(1);
+        node2 = new ListNode(2);
+        node3 = new ListNode(2);
+        node4 = new ListNode(3);
+        node5 = new ListNode(3);
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        System.out.println("Before removing duplicates using hashing:");
+        printList(node1);
+        removeDuplicatesUsingHashing(node1);
+        System.out.println("After removing duplicates using hashing:");
+        printList(node1);
+
+        // Reset the list for testing removeDuplicatesX
+        node1 = new ListNode(1);
+        node2 = new ListNode(2);
+        node3 = new ListNode(2);
+        node4 = new ListNode(3);
+        node5 = new ListNode(3);
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+        System.out.println("Before removing duplicates using removeDuplicatesX:");
+        printList(node1);
+        ListNode listNode = removeDuplicatesX(node1);
+        System.out.println("After removing duplicates using removeDuplicatesX:");
+        printList(listNode);
     }
 
     public static void printList(ListNode head) {
