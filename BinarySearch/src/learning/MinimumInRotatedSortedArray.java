@@ -21,6 +21,9 @@ public class MinimumInRotatedSortedArray {
     }
 
     public static int findMinInRotatedSortedArray(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return -1;
+
         int low = 0;
         int high = nums.length - 1;
         while (low < high) {
@@ -66,5 +69,11 @@ public class MinimumInRotatedSortedArray {
 
         int[] emptyArray = {};
         System.out.println("Minimum in empty array: " + findMinInRotatedSortedArray(emptyArray));
+
+        int[] arr2 = {3, 4, 5, 1, 2};
+        System.out.println("Minimum with linear approach : " + findMinLinear(arr2));
+
+        int [] arr3 = {1, 2, 3, 4, 5};
+        System.out.println("Minimum in sorted array using brute approach: " + findMinInRotatedSortedArrayBrute(arr3));
     }
 }
