@@ -28,10 +28,29 @@ public class CountMaxNodes {
         return count;
     }
 
+    /**
+     * Brute force approach
+     * @param i - height of tree
+     * @return - maximum number of nodes in a tree of height i
+     * Approach:
+     * 1. Initialize count = 0
+     * 2. Loop from 0 to i-1
+     * 3. count += 2^j
+     * 4. Return count
+     */
+    static int countMaxNodesBruteForce(int i) {
+        int count = 0;
+        for (int j = 0; j < i; j++) {
+            count += (int) Math.pow(2, j);
+        }
+        return count;
+    }
+
     public static void main(String[] args) {
         System.out.println(CountMaxNodes.countMaxNodesInTree(5));
         System.out.println(CountMaxNodes.countMaxNodesInTreeUsingShiftOperator(5));
         System.out.println(CountMaxNodes.countMaxNodesInTreeUsingIterative(5));
+        System.out.println(CountMaxNodes.countMaxNodesBruteForce(5));
     }
 
 }
