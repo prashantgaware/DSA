@@ -1,8 +1,8 @@
 package learning;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     public ListNode() {}
 
