@@ -27,7 +27,18 @@ public class TreeImplementation {
 
         System.out.println("Preorder traversal of binary tree is ");
         tree.preOrder(tree.root);
-//        System.out.println(tree.root);
+
+        System.out.println("\nInorder traversal of binary tree is ");
+        tree.inOrder(tree.root);
+
+        System.out.println("\nPostorder traversal of binary tree is ");
+        tree.postOrder(tree.root);
+
+        System.out.println("\nHeight of binary tree is " + tree.height(tree.root));
+        System.out.println("Size of binary tree is " + tree.size(tree.root));
+
+        System.out.println("Is the binary tree a full binary tree? " + tree.isFullBinaryTree(tree.root));
+        System.out.println("Is the binary tree a leaf node? " + tree.isLeaf(tree.root));
     }
 
     /**
@@ -42,5 +53,61 @@ public class TreeImplementation {
         System.out.print(root.data + " ");
         preOrder(root.left);
         preOrder(root.right);
+    }
+
+    private void inOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        inOrder(root.left);
+        System.out.print(root.data + " ");
+        inOrder(root.right);
+    }
+
+    private void postOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.print(root.data + " ");
+    }
+
+    private int height(Node root) {
+        if (root == null) {
+            return -1;
+        }
+
+        return Math.max(height(root.left), height(root.right)) + 1;
+    }
+
+    private int size(Node root) {
+        if (root == null) {
+            return 0;
+        }
+
+        return size(root.left) + size(root.right) + 1;
+    }
+
+    private boolean isLeaf(Node node) {
+        return node != null && node.left == null && node.right == null;
+    }
+
+    private boolean isFullBinaryTree(Node node) {
+        if (node == null) {
+            return true;
+        }
+
+        if (isLeaf(node)) {
+            return true;
+        }
+
+        if (node.left != null && node.right != null) {
+            return isFullBinaryTree(node.left) && isFullBinaryTree(node.right);
+        }
+
+        return false;
     }
 }
