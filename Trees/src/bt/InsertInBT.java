@@ -1,5 +1,10 @@
 package bt;
 
+import com.sun.source.tree.Tree;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class InsertInBT {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(2);
@@ -34,5 +39,44 @@ public class InsertInBT {
             System.out.print(root.data + " ");
             printTree(root.right);
         }
+    }
+
+    /**
+     * Insert a node in Binary Tree iteratively.
+     * @param root The root of the binary tree.
+     * @param k The value to be inserted.
+     * @return The root of the binary tree after insertion.
+     * Approach:
+     * 1. If the root is null, create a new node with value k and return it.
+     * 2. Use a queue to perform level order traversal.
+     * 3. Traverse the tree level by level until you find a node that has an empty left or right child.
+     * 4. Insert the new node as the left child if the left child is empty, otherwise insert it as the right child.
+     * 5. Return the root of the tree.
+     */
+    public static TreeNode insertInBTIterative(TreeNode root, int k) {
+        TreeNode newNode = new TreeNode(k);
+        if (root == null)
+            return newNode;
+
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        while (!q.isEmpty()) {
+            TreeNode temp = q.poll();
+            if (temp.left != null) {
+                q.offer(temp.left);
+            } else {
+                temp.left = new TreeNode(k);
+                return root;
+            }
+
+            if (temp.right != null) {
+                q.offer(temp.right);
+            } else {
+                temp.right = new TreeNode(k);
+                return root;
+            }
+        }
+
+        return root;
     }
 }
