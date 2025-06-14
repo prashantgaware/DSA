@@ -43,5 +43,6 @@ public class SizeOfTree {
         root.right.right.left = new TreeNode(4);
 
         System.out.println("Size of tree: " + sizeUsingLevelOrderTraversal(root));
+        System.out.println("Size of tree: " + size(root));
     }
 }
