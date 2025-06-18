@@ -46,6 +46,10 @@ public class LeftShift {
     }
 
     private static int[] leftRotateUsingReversalAlgo(int[] arr, int d) {
+
+        // if d is greater than the length of the array, we can take modulo
+        d = d % arr.length;
+
         // in first reversal, we reverse the first d elements
         // {1,2,3,4,5} -> {3,2,1,4,5}
         reverse(arr, 0, d-1);
