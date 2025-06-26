@@ -43,5 +43,8 @@ public class LC_145_BinaryTreePostorderTraversal {
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        List<Integer> result = preorderTraversal(root);
+        System.out.println("Postorder Traversal: " + result);
     }
 }
