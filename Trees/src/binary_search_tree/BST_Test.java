@@ -1,11 +1,10 @@
 package binary_search_tree;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class BST_Test {
     public static void main(String[] args) {
-        TreeNode root = BST_Implementation.buildBST(
+        BSTreeNode root = BST_Implementation.buildBST(
                 new ArrayList<>() {
                     {
                         add(10);

@@ -1,25 +1,11 @@
 package binary_search_tree;
 
-import com.sun.source.tree.Tree;
-
 import java.util.List;
-
-class TreeNode{
-    public int data;
-    public TreeNode left;
-    public TreeNode right;
-
-    public TreeNode(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
 
 public class BST_Implementation {
 
-    public static TreeNode buildBST(List<Integer> nodes) {
-        TreeNode root = null;
+    public static BSTreeNode buildBST(List<Integer> nodes) {
+        BSTreeNode root = null;
         for (int val : nodes) {
             root = insert(root, val);
         }
@@ -27,7 +13,7 @@ public class BST_Implementation {
         return root;
     }
 
-    public static void printTree(TreeNode root) {
+    public static void printTree(BSTreeNode root) {
         if (root == null) {
             return;
         }
@@ -36,9 +22,9 @@ public class BST_Implementation {
         printTree(root.right);
     }
 
-    public static TreeNode insert(TreeNode root, int value) {
+    public static BSTreeNode insert(BSTreeNode root, int value) {
         if (root == null) {
-            root = new TreeNode(value);
+            root = new BSTreeNode(value);
             return root;
         }
 
@@ -51,7 +37,7 @@ public class BST_Implementation {
         return root;
     }
 
-    public static boolean search(TreeNode root, int value) {
+    public static boolean search(BSTreeNode root, int value) {
         if (root == null)
             return false;
 
@@ -64,7 +50,7 @@ public class BST_Implementation {
             return search(root.right, value);
     }
 
-    public static TreeNode delete(TreeNode root, int value) {
+    public static BSTreeNode delete(BSTreeNode root, int value) {
         if (root == null) {
             return root;
         }
@@ -81,7 +67,7 @@ public class BST_Implementation {
                 return root.left;
             } else {
                 // Node with two children: Get the inorder successor (smallest in the right subtree)
-                TreeNode minNode = root.right;
+                BSTreeNode minNode = root.right;
                 while (minNode.left != null) {
                     minNode = minNode.left;
                 }
