@@ -43,7 +43,21 @@ package leetcode;
     chars[i] is a lowercase English letter, uppercase English letter, digit, or symbol.
 */
 
-public class StringCompression {
+public class LC_443_StringCompression {
+
+    /**
+     * Compresses the input character array in-place and returns the new length of the array.
+     * @param chars the character array to be compressed
+     * @return the new length of the compressed character array
+     * Approach:
+     * 1. Initialize an index to keep track of the position in the compressed array.
+     * 2. Iterate through the character array using a while loop.
+     * 3. For each character, count the number of consecutive occurrences.
+     * 4. Append the character to the compressed array.
+     * 5. If the count is greater than 1, convert the count to a string
+     * and append each digit to the compressed array.
+     * 6. Return the new length of the compressed array.
+     */
     private static int compress(char[] chars) {
         int index = 0;
         int i = 0;
