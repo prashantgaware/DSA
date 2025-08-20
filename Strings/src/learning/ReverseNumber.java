@@ -4,11 +4,25 @@ import java.util.Stack;
 
 public class ReverseNumber {
     public static void main(String[] args) {
-//        System.out.println(reverseWordUsingStack("GeeksForGeeks"));
-//        System.out.println(reverseStringUsingTwoPointer("India"));
+        System.out.println(reverseWordUsingStack("GeeksForGeeks"));
+        System.out.println(reverseStringUsingTwoPointer("India"));
         System.out.println(reverseNumber(12345));
     }
 
+    /**
+     *
+     * @param string
+     * @return
+     * Approach:
+     * 1. Create a stack to hold characters.
+     * 2. Iterate through each character in the string and push it onto the stack.
+     * 3. Create a StringBuilder to build the reversed string.
+     * 4. While the stack is not empty, pop characters from the stack and append
+     *   them to the StringBuilder.
+     *   5. Convert the StringBuilder to a string and return it.
+     * Time Complexity: O(n), where n is the length of the string.
+     * Space Complexity: O(n), where n is the length of the string due to the stack and StringBuilder.
+     */
     private static String reverseWordUsingStack(String string) {
         Stack<Character> stack = new Stack<>();
 
