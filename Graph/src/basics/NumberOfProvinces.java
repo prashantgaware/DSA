@@ -14,19 +14,6 @@ public class NumberOfProvinces {
         int v = 4;
         int provinces = numberOfProvinces(adj, v);
         System.out.println("Number of provinces: " + provinces);
-
-        // ex 2 of having a disconnected graph
-        List<List<Integer>> adj2 = List.of(
-            List.of(1),
-            List.of(0, 2),
-            List.of(1, 3),
-            List.of(2),
-            List.of(5),
-            List.of(4)
-        );
-        int v2 = 6;
-        int provinces2 = numberOfProvinces(adj2, v2);
-        System.out.println("Number of provinces in disconnected graph: " + provinces2);
     }
 
     /**
