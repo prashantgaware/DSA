@@ -70,9 +70,25 @@ public class LC_169_MajorityElement {
         return -1;
     }
 
+    public static int majorityElementOptimal(int[] arr) {
+        int freq = 0, ans = 0;
+        for (int i : arr) {
+            if (freq == 0) {
+                ans = i;
+            }
+            if (ans == i) {
+                freq++;
+            } else {
+                freq--;
+            }
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
         int[] arr = {1,4,4,6,7,4,4};
         System.out.println("Majority Element: " + majorityElement(arr));
         System.out.println("Majority Element: " + majorityElementUsingHashing(arr));
+        System.out.println("Majority Element Optimal: " + majorityElementOptimal(arr));
     }
 }
