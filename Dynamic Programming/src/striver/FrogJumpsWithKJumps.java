@@ -1,7 +1,7 @@
 package striver;
 
 /*
-    Frog Jumps
+    Frog Jumps 2
 
     Problem Statement:
     A frog is at the start of a series of stones, each with a certain height.
@@ -25,7 +25,7 @@ package striver;
 
 import java.util.Arrays;
 
-public class FrogJumps {
+public class FrogJumpsWithKJumps {
     /**
      * Recursion
      * @param n index of last stone
@@ -39,15 +39,19 @@ public class FrogJumps {
      * Time Complexity: O(2^n) exponential time due to overlapping subproblems
      * Space Complexity: O(n) for recursion stack
      */
-    public static int minEnergyRecursive(int n, int[] heights) {
-        if (n == 0) return 0;
+    public static int minEnergyRecursive(int n, int[] heights, int k) {
+        if (n == 0)
+            return 0;
 
-        int left = minEnergyRecursive(n - 1, heights) + Math.abs(heights[n] - heights[n - 1]);
-        int right = Integer.MAX_VALUE;
-        if (n > 1)
-            right = minEnergyRecursive(n - 2, heights) + Math.abs(heights[n] - heights[n - 2]);
+        int minSteps = Integer.MAX_VALUE;
+        for (int j = 1; j <= k; j++) {
+            if (n - j >= 0) {
+                int jumps = minEnergyRecursive(n - j, heights, k) + Math.abs(heights[n] - heights[n - j]);
+                minSteps = Math.min(minSteps, jumps);
+            }
+        }
 
-        return Math.min(left, right);
+        return minSteps;
     }
 
     /**
@@ -66,17 +70,24 @@ public class FrogJumps {
      * Time Complexity: O(n)
      * Space Complexity: O(n) for dp array + O(n) for recursion stack
      */
-    public static int minEnergyMemoization(int n, int[] heights, int[] dp) {
+    public static int minEnergyMemoization(int n, int[] heights, int[] dp, int k) {
         if (n == 0)
             return 0;
+
         if (dp[n] != -1)
             return dp[n];
 
-        int left = minEnergyMemoization(n -1, heights, dp) + Math.abs(heights[n] - heights[n - 1]);
-        int right = Integer.MAX_VALUE;
-        if (n > 1)
-            right = minEnergyMemoization(n - 2, heights, dp) + Math.abs(heights[n] - heights[n - 2]);
-        return dp[n] = Math.min(left, right);
+        int minSteps = Integer.MAX_VALUE;
+        dp[0] = 0;
+        for (int j = 1; j <= k; j++) {
+            if (n - j >= 0) {
+                int jumps = minEnergyMemoization(n - j, heights, dp, k) + Math.abs(heights[n] - heights[n - j]);
+                minSteps = Math.min(minSteps, jumps);
+            }
+        }
+        dp[n] = minSteps;
+
+        return dp[n];
     }
 
     /**
@@ -95,17 +106,14 @@ public class FrogJumps {
      * Time Complexity: O(n)
      * Space Complexity: O(n) for dp array
      */
-    public static int minEnergyTabulation(int n, int[] heights) {
+    public static int minEnergyTabulation(int n, int[] heights, int k) {
         int[] dp = new int[n];
         dp[0] = 0;
-
-        for (int i = 1; i < n; i++) {
-            int left = dp[i - 1] + Math.abs(heights[i] - heights[i - 1]);
-            int right = Integer.MAX_VALUE;
-            if (i > 1)
-                right = dp[i - 2] + Math.abs(heights[i] - heights[i - 2]);
-            dp[i] = Math.min(left, right);
+        for (int j = 1; j <= k; j++) {
+            int jumps = dp[n - j] + Math.abs(heights[n - 1] - heights[n - 1 - j]);
+            dp[j] = Math.min(dp[j], jumps);
         }
+
         return dp[n - 1];
     }
 
@@ -142,16 +150,13 @@ public class FrogJumps {
     }
 
     public static void main(String[] args) {
-        int[] heights = {30, 10, 60, 10, 60, 50};
+        int[] heights = {30, 10, 60, 10, 60, 50, 80, 30, 20};
         int n = heights.length;
-        System.out.println(minEnergyRecursive(n - 1, heights));
-        System.out.println();
+        System.out.println(minEnergyRecursive(n - 1, heights, 4));
         int[] dp = new int[n];
         Arrays.fill(dp, -1);
-        System.out.println(minEnergyMemoization(n - 1, heights, dp));
-        System.out.println();
-        System.out.println(minEnergyTabulation(n, heights));
-        System.out.println();
+        System.out.println(minEnergyMemoization(n - 1, heights, dp, 4));
+        System.out.println(minEnergyTabulation(n, heights, 4));
         System.out.println(minEnergySpaceOptimized(n, heights));
     }
 }
