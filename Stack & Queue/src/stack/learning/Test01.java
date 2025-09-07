@@ -1,4 +1,4 @@
-package learning;
+package stack.learning;
 
 import java.util.Scanner;
 

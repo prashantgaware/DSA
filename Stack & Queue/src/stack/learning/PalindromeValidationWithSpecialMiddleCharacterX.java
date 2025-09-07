@@ -1,4 +1,4 @@
-package learning;
+package stack.learning;
 
 public class PalindromeValidationWithSpecialMiddleCharacterX {
     private static boolean isPalindrome(String str) {
