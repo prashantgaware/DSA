@@ -1,5 +1,7 @@
 package bt;
 
+import java.util.Stack;
+
 public class CountNodesInCompleteTree {
     /**
      * Count the number of nodes in cbt
@@ -23,6 +25,40 @@ public class CountNodesInCompleteTree {
         return count;
     }
 
+    public static int countNodesUsingInorder(TreeNode root) {
+        if (root == null)
+            return 0;
+        int count = 0;
+        return inOrder(root, count);
+    }
+
+    public static int inOrder(TreeNode root, int count) {
+        if (root == null)
+            return count;
+        count = inOrder(root.left, count);
+        count++;
+        count = inOrder(root.right, count);
+        return count;
+    }
+
+    // Iterative approach using stack
+    public static int countNodesIterative(TreeNode root) {
+        if (root == null)
+            return 0;
+        int count = 0;
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            count++;
+            if (node.right != null)
+                stack.push(node.right);
+            if (node.left != null)
+                stack.push(node.left);
+        }
+        return count;
+    }
+
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -32,5 +68,7 @@ public class CountNodesInCompleteTree {
         root.right.left = new TreeNode(6);
 
         System.out.println(countNodes(root));
+        System.out.println(countNodesUsingInorder(root));
+        System.out.println(countNodesIterative(root));
     }
 }
