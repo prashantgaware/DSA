@@ -70,4 +70,48 @@ public class RemoveDuplicates2 {
         }
         return dummy.next;
     }
+
+    /**
+     *
+     * @param head
+     * @return
+     * Approach:
+     * 1. Create a dummy node to handle edge cases where the head might be removed
+     * 2. Use three pointers: preSlow, slow, and fast to traverse the list
+     * 3. If slow and fast have the same value, it means we have found duplicates
+     * 4. Move fast forward until we find a different value, marking that duplicates were found
+     * 5. If duplicates were found, link preSlow.next to fast to remove duplicates
+     * 6. If no duplicates were found, move preSlow to slow
+     * 7. Continue until the end of the list
+     * 8. Return dummy.next as the new head of the modified list
+     * Time Complexity: O(n) where n is the number of nodes in the list
+     * Space Complexity: O(1) as we are using only a constant amount of extra space
+     */
+    public static ListNode removeDuplicatesOptimal(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode preSlow = dummy;
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while (slow != null) {
+            boolean isDuplicate = false;
+            while (fast != null && fast.val == slow.val) {
+                isDuplicate = true;
+                fast = fast.next;
+            }
+            if (isDuplicate) {
+                preSlow.next = fast;
+            } else {
+                preSlow = slow;
+            }
+
+            slow = fast;
+            fast = (fast != null) ? fast.next : null;
+        }
+        return dummy.next;
+    }
 }
