@@ -1,5 +1,18 @@
 package binary_search_tree;
 
+/*
+    Floor in BST
+    Difficulty: Easy
+    Given a Binary Search Tree (BST) and a key, find the floor value of the
+    key in the BST. The floor value is defined as the largest value in the BST
+    that is less than or equal to the key. If no such value exists, return -1.
+
+    Example:
+    Input: root = [8,4,12,2,6,10,14], key = 5
+    Output: 4
+    Explanation: The largest value in the BST that is less than or equal to 5 is 4.
+*/
+
 /**
  * Find the floor of a given key in a Binary Search Tree (BST).
  * The floor of a key is the largest value in the BST that is less than or equal to the key.

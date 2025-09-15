@@ -1,5 +1,18 @@
 package binary_search_tree;
 
+/*
+    Ceiling in BST
+    Difficulty: Easy
+    Given a Binary Search Tree (BST) and a key, find the ceiling value of the
+    key in the BST. The ceiling value is defined as the smallest value in the BST
+    that is greater than or equal to the key. If no such value exists, return -1.
+
+    Example:
+    Input: root = [8,4,12,2,6,10,14], key = 5
+    Output: 6
+    Explanation: The smallest value in the BST that is greater than or equal to 5 is 6.
+ */
+
 public class CeilingInBST {
     public static void main(String[] args) {
         BSTreeNode root = new BSTreeNode(8);
