@@ -81,7 +81,7 @@ public class CycleDetectionInUndirectedGraphUsingBFS {
                 if (!visited[neighbour]) {
                     visited[neighbour] = true;
                     queue.offer(new Pair(neighbour, node));
-                } else if (parent != neighbour) {
+                } else if (parent != neighbour) { // if the visited node is not the parent, then there is a cycle
                     return true;
                 }
             }
