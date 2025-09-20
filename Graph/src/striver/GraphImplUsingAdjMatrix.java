@@ -1,4 +1,4 @@
-package basics;
+package striver;
 
 public class GraphImplUsingAdjMatrix {
     private int[][] adjMatrix;

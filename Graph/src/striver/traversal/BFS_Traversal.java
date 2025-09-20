@@ -1,4 +1,4 @@
-package basics.traversal;
+package striver.traversal;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
