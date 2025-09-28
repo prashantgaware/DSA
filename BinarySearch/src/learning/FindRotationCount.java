@@ -2,7 +2,9 @@ package learning;
 
 public class FindRotationCount {
     public static void main(String[] args) {
-
+        int[] arr = {15, 18, 2, 3, 6, 12};
+        System.out.println("Number of rotations (Brute Force): " + findRotationCountBrute(arr));
+        System.out.println("Number of rotations (Optimal): " + findRotationCountOptimal(arr));
     }
 
     /**
