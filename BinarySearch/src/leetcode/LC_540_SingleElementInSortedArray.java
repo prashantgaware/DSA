@@ -8,6 +8,26 @@ public class LC_540_SingleElementInSortedArray {
         System.out.println(findNonDuplicatesBrute(nums));
     }
 
+    /**
+     * Binary Search Approach
+     * @param nums - sorted array where every element appears twice except for one element which appears once
+     * @return - the single element that appears only once
+     * Approach:
+     * 1. Initialize left and right pointers
+     * 2. While left is less than right
+     * 3. Calculate mid
+     * 4. Check if mid is even or odd
+     * 5. If mid is even, check if the next element is the same
+     *    - If yes, the single element is in the right half, move left to mid + 2
+     *    - If no, the single element is in the left half, move right to mid
+     * 6. If mid is odd, check if the previous element is the same
+     *    - If yes, the single element is in the right half, move left to mid + 1
+     *    - If no, the single element is in the left half, move right to mid - 1
+     * 7. When left meets right, it points to the single element
+     * 8. Return nums[left]
+     * Time Complexity: O(log n)
+     * Space Complexity: O(1)
+     */
     private static int singleNonDuplicate(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
