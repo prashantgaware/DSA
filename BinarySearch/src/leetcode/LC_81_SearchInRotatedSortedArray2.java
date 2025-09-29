@@ -4,6 +4,8 @@ public class LC_81_SearchInRotatedSortedArray2 {
     public static void main(String[] args) {
         int[] arr = {1,1,1,2,3,3,0,0,1};
         System.out.println(search(arr, 0));
+        int[] arr1 = {3,1,2,3,3,3,3};
+        System.out.println(search(arr1, 1));
     }
 
     public static boolean search(int[] arr, int target) {
