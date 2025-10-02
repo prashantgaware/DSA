@@ -52,7 +52,7 @@ public class BST_Implementation {
 
     public static BSTreeNode delete(BSTreeNode root, int value) {
         if (root == null) {
-            return root;
+            return null;
         }
 
         if (root.data > value) {
@@ -60,6 +60,9 @@ public class BST_Implementation {
         } else if (root.data < value) {
             root.right = delete(root.right, value);
         } else {
+            if (root.left == null && root.right == null) {
+                return null;
+            }
             // Node with only one child or no child
             if (root.left == null) {
                 return root.right;
