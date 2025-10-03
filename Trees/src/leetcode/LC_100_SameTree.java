@@ -14,12 +14,20 @@ public class LC_100_SameTree {
     }
 
     public static void main(String[] args) {
-        TreeNode p = new TreeNode(1);
-        p.left = new TreeNode(2);
-        p.right = new TreeNode(3);
-        TreeNode q = new TreeNode(1);
-        q.left = new TreeNode(2);
-        q.right = new TreeNode(3);
-        System.out.println(isSame(p, q));
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(7);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(3);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(9);
+        TreeNode root1 = new TreeNode(4);
+        root1.left = new TreeNode(2);
+        root1.right = new TreeNode(7);
+        root1.left.left = new TreeNode(1);
+        root1.left.right = new TreeNode(3);
+        root1.right.left = new TreeNode(6);
+        root1.right.right = new TreeNode(9);
+        System.out.println(isSame(root, root1));
     }
 }
