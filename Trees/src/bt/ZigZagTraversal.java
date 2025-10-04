@@ -61,9 +61,17 @@ public class ZigZagTraversal {
                 Level 2: [4, 5, 6, 7]  (left-to-right: add at end)
                  */
                 if (leftToRight) {
-                    levelNodes.add(currentNode.data);
+                    if (currentNode != null) {
+                        levelNodes.add(currentNode.data);
+                    } else {
+                        levelNodes.add(null);
+                    }
                 } else {
-                    levelNodes.add(0, currentNode.data);
+                    if (currentNode != null) {
+                        levelNodes.add(0, currentNode.data);
+                    } else {
+                        levelNodes.add(0, null);
+                    }
                 }
 
                 if (currentNode.left != null) {
