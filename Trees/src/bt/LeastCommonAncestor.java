@@ -35,7 +35,7 @@ public class LeastCommonAncestor {
 
         TreeNode lca = lcaRec(root, p, q);
         if (lca != null) {
-            System.out.println("LCA of " + p.val + " and " + q.val + " is: " + lca.val);
+            System.out.println("LCA of " + p.data + " and " + q.data + " is: " + lca.data);
         } else {
             System.out.println("LCA not found.");
         }
