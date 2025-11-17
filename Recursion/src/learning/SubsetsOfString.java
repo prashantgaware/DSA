@@ -12,6 +12,7 @@ public class SubsetsOfString {
     // 2. If we do not include the character, then we will call the function recursively with the next index and the empty string.
     // 3. If we reach the end of the string, then we will print the string.
     // Time Complexity: O(2^n)
+    // Space Complexity: O(n) - for the recursion stack
     private static void subsets(String str, int i, String s) {
         if (i == str.length()) {
             System.out.println(s);
