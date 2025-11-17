@@ -1,5 +1,10 @@
 package learning;
 
+/*
+  Find Peak Element in an array
+    A peak element is an element that is greater than its neighbors.
+ */
+
 public class PeekElement {
 
     public static void main(String[] args) {
