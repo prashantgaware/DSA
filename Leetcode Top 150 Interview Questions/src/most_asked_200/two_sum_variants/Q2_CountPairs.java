@@ -1,4 +1,4 @@
-package most_asked_200;
+package most_asked_200.two_sum_variants;
 
 import java.util.HashMap;
 import java.util.Map;
