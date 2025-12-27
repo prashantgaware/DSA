@@ -2,9 +2,9 @@ package most_asked_200.buy_stocks;
 
 import java.util.Arrays;
 
-public class Q3_BestTimeToBuyAndSellStocks3 {
-    public static int maxProfit(int[] prices) {
-        return getMaxProfit(0, 1, 2, prices);
+public class Q4_BestTimeToBuyAndSellStocks4 {
+    public static int maxProfit(int[] prices, int k) {
+        return getMaxProfit(0, 1, k, prices);
     }
 
     private static int getMaxProfit(int index, int buy, int cap, int[] prices) {
@@ -27,8 +27,8 @@ public class Q3_BestTimeToBuyAndSellStocks3 {
         return maxProfit;
     }
 
-    public static int maxProfitUsingMemoization(int[] prices) {
-        int[][][] dp = new int[prices.length][2][2];
+    public static int maxProfitUsingMemoization(int[] prices, int k) {
+        int[][][] dp = new int[prices.length][2][k + 1];
         for (int[][] row : dp) {
             for (int[] col : row) {
                 Arrays.fill(col, -1);
@@ -38,10 +38,7 @@ public class Q3_BestTimeToBuyAndSellStocks3 {
     }
 
     private static int getMaxProfitUsingMemoization(int index, int buy, int cap, int[] prices, int[][][] dp) {
-        if (cap == 0) {
-            return 0;
-        }
-        if (index == prices.length) {
+        if (index == prices.length || cap == 0) {
             return 0;
         }
 
@@ -63,7 +60,7 @@ public class Q3_BestTimeToBuyAndSellStocks3 {
 
     public static void main(String[] args) {
         int[] prices = new int[] {3,6,2,7,0,4,6};
-        System.out.println(maxProfit(prices));
-        System.out.println(maxProfitUsingMemoization(prices));
+        System.out.println(maxProfit(prices, 3));
+        System.out.println(maxProfitUsingMemoization(prices, 3));
     }
 }
