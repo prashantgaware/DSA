@@ -30,7 +30,8 @@ public class Q1_BestTimeToBuyAndSellStocks1 {
         int maxSoFar = 0;
         int currentMax = 0;
         for (int i = 1; i < prices.length; i++) {
-            currentMax = Math.max(currentMax, prices[i] - prices[i - 1]);
+            currentMax += prices[i] - prices[i - 1];
+            currentMax = Math.max(0, currentMax);
             maxSoFar = Math.max(maxSoFar, currentMax);
         }
         return maxSoFar;
@@ -48,7 +49,8 @@ public class Q1_BestTimeToBuyAndSellStocks1 {
     }
 
     public static void main(String[] args) {
-        int[] prices = new int[] {3,6,2,7,0,4,6};
+//        int[] prices = new int[] {3,6,2,7,0,4,6};
+        int[] prices = new int[] {1,2,2,3,0,4,6};
         System.out.println(maxProfit(prices));
         System.out.println(maxProfitBrute(prices));
         System.out.println(maxProfitUsingKadane(prices));
