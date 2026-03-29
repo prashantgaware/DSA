@@ -34,7 +34,7 @@ public class ProductOfArrayExceptSelf {
      */
     public static int[] productArrayExceptSelfOptimized(int[] arr) {
         int n = arr.length;
-        int ans[] = new int[n];
+        int[] ans = new int[n];
         ans[0] = 1;
         for (int i = 1; i < n; i++) {
             ans[i] = ans[i - 1] * arr[i - 1];
@@ -75,5 +75,7 @@ public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {
         int[] nums = {1,2,3,4};
         System.out.println(Arrays.toString(productExceptSelf(nums)));
+        System.out.println(Arrays.toString(productExceptSelfBrute(nums)));
+        System.out.println(Arrays.toString(productArrayExceptSelfOptimized(nums)));
     }
 }
