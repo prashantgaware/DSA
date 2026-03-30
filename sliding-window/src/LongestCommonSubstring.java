@@ -12,6 +12,7 @@ public class LongestCommonSubstring {
     public static void main(String[] args) {
         String str = "abcabcbb";
         System.out.println(LongestCommonSubstring.longestCommonSubstringUsingSet(str));
+        System.out.println(LongestCommonSubstring.longestCommonSubstringUsingMap(str));
     }
 
     /**
@@ -36,9 +37,24 @@ public class LongestCommonSubstring {
     }
 
     /**
-     *
-     * @param s
-     * @return
+     * Longest substring without repeating characters using a HashMap.
+     * @param s input string
+     * @return length of the longest substring without repeating characters
+     * Approach:
+     * 1. Use a sliding window with two pointers: `left` and `right`.
+     * 2. Store each character's latest index in `map`.
+     * 3. If current character was seen, move `left` to `max(left, lastIndex + 1)`.
+     * 4. Update `maxLen` using current window size: `right - left + 1`.
+     * Dry run for `abcabcbb`:
+     * - r=0(a): left=0, maxLen=1
+     * - r=1(b): left=0, maxLen=2
+     * - r=2(c): left=0, maxLen=3
+     * - r=3(a): seen at 0, left=1, maxLen=3
+     * - r=4(b): seen at 1, left=2, maxLen=3
+     * - r=5(c): seen at 2, left=3, maxLen=3
+     * - r=6(b): seen at 4, left=5, maxLen=3
+     * - r=7(b): seen at 6, left=7, maxLen=3
+     * Final answer: `3`.
      */
     public static int longestCommonSubstringUsingMap(String s) {
         Map<Character, Integer> map = new HashMap<>();
